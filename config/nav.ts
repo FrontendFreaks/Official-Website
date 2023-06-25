@@ -11,4 +11,8 @@ export const navConfig: NavItem[] = [
     title: "features",
     href: "#features",
   },
+  {
+    title: "join",
+    href: "#join",
+  },
 ];
