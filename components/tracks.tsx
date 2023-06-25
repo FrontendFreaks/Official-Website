@@ -6,13 +6,13 @@ type Props = {};
 
 export default function Tracks({}: Props) {
   return (
-    <section className="text-center md:my-20">
-      <h4 className="md:text-3xl text-black font-bold">Our Tracks</h4>
+    <section className="text-center md:my-20 my-10">
+      <h4 className="md:text-3xl text-xl text-black font-bold">Our Tracks</h4>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, autem.
       </p>
 
-      <div className="flex gap-6 mt-8">
+      <div className="flex gap-6 mt-8 md:flex-row flex-col">
         <div className="flex flex-col gap-3 items-center border p-4 rounded-lg">
           <Image src="/learn_img.svg" alt="learn" width={250} height={250} />
           <div className="flex flex-col gap-2">

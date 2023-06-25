@@ -8,7 +8,7 @@ type Props = {};
 export default function SiteHeader({}: Props) {
   return (
     <header className="sticky top-0 z-40 w-full bg-background/95 backdrop-blur p-3">
-      <div className="container flex h-14 items-center gap-6">
+      <div className="container flex h-14 items-center md:gap-6 gap-14">
         <MainNav items={navConfig} />
         <Button className="rounded-full">Mentorship</Button>
       </div>
