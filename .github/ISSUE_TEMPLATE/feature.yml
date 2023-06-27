@@ -1,0 +1,26 @@
+name: 📄 Feature Request
+description: Want to add a new Feature? use this
+title: "[Feat] <description>"
+labels: ["📄 aspect: feature", "🚦 status: awaiting triage"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A brief description of the feature.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Please add screenshots if applicable
+    validations:
+      required: false
+  - type: textarea
+    id: extrainfo
+    attributes:
+      label: Additional information
+      description: Is there anything else we should know about this issue?
+    validations:
+      required: false
