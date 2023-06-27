@@ -16,6 +16,7 @@ const CourseRootLayout = ({ children }: BatchRootLayoutProps) => {
           <MainNav items={navConfig}>
             <DocsSidebarNav items={docsConfig} />
           </MainNav>
+
           <div className="flex flex-1 items-center space-x-4 sm:justify-end">
             <nav className="flex space-x-4">
               <Link href="/" target="_blank" rel="noreferrer">

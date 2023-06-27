@@ -17,3 +17,16 @@ export type SidebarNavItem = {
       items: NavItem[];
     }
 );
+
+export type SidebarNav = {
+  title: string;
+} & (
+  | {
+      href: string;
+      items: never;
+    }
+  | {
+      href?: string;
+      items: SidebarNavItem[];
+    }
+);

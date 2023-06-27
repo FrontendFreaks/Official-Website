@@ -1,123 +1,174 @@
-import { SidebarNavItem } from "@/types";
+import { SidebarNav, SidebarNavItem } from "@/types";
 
-export const docsConfig: SidebarNavItem[] = [
+export const doc: SidebarNavItem[] = [
   {
     title: "Getting Started",
     items: [
       {
         title: "Introduction",
-        href: "/docs",
+        href: "/batch",
       },
     ],
   },
   {
-    title: "Documentation",
+    title: "Learn",
     items: [
       {
         title: "Introduction",
-        href: "/docs/documentation",
+        href: "/batch/learn",
       },
       {
-        title: "Contentlayer",
-        href: "/docs/in-progress",
-        disabled: true,
+        title: "HTML",
+        href: "/batch/learn/html",
       },
       {
-        title: "Components",
+        title: "CSS",
         href: "/docs/documentation/components",
       },
       {
-        title: "Code Blocks",
+        title: "Git/Github",
         href: "/docs/documentation/code-blocks",
       },
       {
-        title: "Style Guide",
+        title: "Javascript",
         href: "/docs/documentation/style-guide",
       },
+    ],
+  },
+];
+
+export const docsConfig: SidebarNav[] = [
+  {
+    title: "Getting Started",
+    items: [
       {
-        title: "Search",
-        href: "/docs/in-progress",
-        disabled: true,
+        title: "Introduction",
+        href: "/batch",
       },
     ],
   },
   {
-    title: "Blog",
+    title: "Learn",
     items: [
       {
-        title: "Introduction",
-        href: "/docs/in-progress",
-        disabled: true,
+        title: "Html",
+        items: [
+          {
+            title: "baisc",
+            href: "/batch/learn/html/basic",
+          },
+        ],
       },
       {
-        title: "Build your own",
-        href: "/docs/in-progress",
-        disabled: true,
+        title: "Javascript",
+        items: [
+          {
+            title: "basic",
+            href: "/batch/learn/html/basic",
+          },
+          {
+            title: "Flex",
+            href: "/batch/learn/html/basic",
+          },
+          {
+            title: "Grid",
+            href: "/batch/learn/html/basic",
+          },
+        ],
       },
       {
-        title: "Writing Posts",
-        href: "/docs/in-progress",
-        disabled: true,
+        title: "Git/Github",
+        items: [
+          {
+            title: "basic",
+            href: "/batch/learn/html/basic",
+          },
+          {
+            title: "Flex",
+            href: "/batch/learn/html/basic",
+          },
+          {
+            title: "Grid",
+            href: "/batch/learn/html/basic",
+          },
+        ],
+      },
+      {
+        title: "CSS",
+        items: [
+          {
+            title: "basic",
+            href: "/batch/learn/html/basic",
+          },
+          {
+            title: "Flex",
+            href: "/batch/learn/html/basic",
+          },
+          {
+            title: "Grid",
+            href: "/batch/learn/html/basic",
+          },
+        ],
       },
     ],
   },
   {
-    title: "Dashboard",
+    title: "Build",
     items: [
       {
-        title: "Introduction",
-        href: "/docs/in-progress",
-        disabled: true,
+        title: "React js",
+        items: [
+          {
+            title: "Fundamentals",
+            href: "/batch/learn/html/basic",
+          },
+          {
+            title: "Todo App",
+            href: "/batch/learn/html/basic",
+          },
+          {
+            title: "Quiz App",
+            href: "/batch/learn/html/basic",
+          },
+          {
+            title: "Weather App",
+            href: "/batch/learn/html/basic",
+          },
+        ],
       },
       {
-        title: "Layouts",
-        href: "/docs/in-progress",
-        disabled: true,
-      },
-      {
-        title: "Server Components",
-        href: "/docs/in-progress",
-        disabled: true,
-      },
-      {
-        title: "Authentication",
-        href: "/docs/in-progress",
-        disabled: true,
-      },
-      {
-        title: "Database with Prisma",
-        href: "/docs/in-progress",
-        disabled: true,
-      },
-      {
-        title: "API Routes",
-        href: "/docs/in-progress",
-        disabled: true,
+        title: "Interview Qs",
+        items: [
+          {
+            title: "basic",
+            href: "/batch/learn/html/basic",
+          },
+          {
+            title: "Flex",
+            href: "/batch/learn/html/basic",
+          },
+          {
+            title: "Grid",
+            href: "/batch/learn/html/basic",
+          },
+        ],
       },
     ],
   },
   {
-    title: "Marketing Site",
+    title: "Hired",
     items: [
       {
-        title: "Introduction",
-        href: "/docs/in-progress",
-        disabled: true,
+        title: "Linkedin",
+        href: "/batch/learn/html/basic",
       },
       {
-        title: "File Structure",
-        href: "/docs/in-progress",
-        disabled: true,
+        title: "Wellfound",
+        href: "/batch/learn/html/basic",
       },
       {
-        title: "Tailwind CSS",
-        href: "/docs/in-progress",
-        disabled: true,
-      },
-      {
-        title: "Typography",
-        href: "/docs/in-progress",
-        disabled: true,
+        title: "Resume",
+        href: "/batch/learn/html/basic",
       },
     ],
   },

@@ -7,6 +7,7 @@ import { useSelectedLayoutSegment } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { MobileNav } from "./mobile-nav";
 import { NavItem } from "@/types";
+import { CommandMenu } from "../command-menu";
 // import { MobileNav } from "./mobile-nav";
 
 interface MainNavProps {
@@ -26,22 +27,28 @@ export default function MainNav({ items, children }: MainNavProps) {
           Frontend Freaks
         </span>
       </Link>
+
       {items?.length ? (
-        <nav className="hidden md:flex gap-6">
-          {items?.map((item, index) => {
-            return (
-              <Link
-                href={item.href}
-                key={index}
-                className={cn(
-                  "flex items-center font-medium transition-colors hover:text-foreground/80 sm:text-sm capitalize text-foreground/60"
-                )}
-              >
-                {item.title}
-              </Link>
-            );
-          })}
-        </nav>
+        <div className="flex gap-6">
+          <div className="w-full md:flex hidden flex-1 md:w-auto md:flex-none">
+            <CommandMenu />
+          </div>
+          <nav className="hidden md:flex gap-6">
+            {items?.map((item, index) => {
+              return (
+                <Link
+                  href={item.href}
+                  key={index}
+                  className={cn(
+                    "flex items-center font-medium transition-colors hover:text-foreground/80 sm:text-sm capitalize text-foreground/60"
+                  )}
+                >
+                  {item.title}
+                </Link>
+              );
+            })}
+          </nav>
+        </div>
       ) : null}
       <button
         className="flex items-center space-x-2 md:hidden"
