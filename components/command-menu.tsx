@@ -1,7 +1,5 @@
 "use client";
-
-import * as React from "react";
-import { Check, ChevronsUpDown } from "lucide-react";
+import { Check } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -17,6 +15,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { useState } from "react";
 
 const frameworks = [
   {
@@ -42,8 +41,8 @@ const frameworks = [
 ];
 
 export function CommandMenu() {
-  const [open, setOpen] = React.useState(false);
-  const [value, setValue] = React.useState("");
+  const [open, setOpen] = useState(false);
+  const [value, setValue] = useState("");
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -52,12 +51,16 @@ export function CommandMenu() {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-[200px] justify-between"
+          className={cn(
+            "relative w-full justify-between text-sm text-muted-foreground sm:pr-12 md:w-40 lg:w-64"
+          )}
         >
-          {value
-            ? frameworks.find((framework) => framework.value === value)?.label
-            : "Select framework..."}
-          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+          <span className="hidden lg:inline-flex">Search documentation...</span>
+          <span className="inline-flex lg:hidden">Search...</span>
+
+          <kbd className="pointer-events-none absolute right-1.5 hidden h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
+            <span className="text-xs">⌘</span>K
+          </kbd>
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
