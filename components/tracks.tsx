@@ -1,6 +1,7 @@
 import Image from "next/image";
-import React from "react";
-import { Button } from "./ui/button";
+import { buttonVariants } from "./ui/button";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 type Props = {};
 
@@ -23,7 +24,12 @@ export default function Tracks({}: Props) {
               in a BC, making it over 2000 years old.
             </p>
           </div>
-          <Button className="rounded-full px-8 py-2 mt-4">Join</Button>
+          <Link
+            href="/batch/learn"
+            className={cn(buttonVariants(), "rounded-full px-8 py-2 mt-4")}
+          >
+            Join
+          </Link>
         </div>
         <div className="flex flex-col gap-3 items-center border p-4 rounded-lg">
           <Image src="/build_img.svg" alt="learn" width={250} height={250} />
@@ -35,7 +41,12 @@ export default function Tracks({}: Props) {
               in a BC, making it over 2000 years old.
             </p>
           </div>
-          <Button className="rounded-full px-8 py-2 mt-4">Join</Button>
+          <Link
+            href="/batch/build"
+            className={cn(buttonVariants(), "rounded-full px-8 py-2 mt-4")}
+          >
+            Join
+          </Link>
         </div>
         <div className="flex flex-col gap-3 items-center border p-4 rounded-lg">
           <Image src="/hire_img.svg" alt="learn" width={250} height={250} />
@@ -47,7 +58,12 @@ export default function Tracks({}: Props) {
               in a BC, making it over 2000 years old.
             </p>
           </div>
-          <Button className="rounded-full px-8 py-2 mt-4">Join</Button>
+          <Link
+            href="/batch/hire"
+            className={cn(buttonVariants(), "rounded-full px-8 py-2 mt-4")}
+          >
+            Join
+          </Link>
         </div>
       </div>
     </section>

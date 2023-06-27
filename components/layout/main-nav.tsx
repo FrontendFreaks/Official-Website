@@ -1,13 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
 import { Icons } from "../icons";
 import { useSelectedLayoutSegment } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { MobileNav } from "./mobile-nav";
-import { CommandMenu } from "../command-menu";
 import { NavItem } from "@/types";
+import { useState } from "react";
 
 interface MainNavProps {
   items?: NavItem[];
@@ -16,7 +15,7 @@ interface MainNavProps {
 
 export default function MainNav({ items, children }: MainNavProps) {
   const segment = useSelectedLayoutSegment();
-  const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false);
+  const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
 
   return (
     <div className="flex gap-6 md:gap-10 justify-between w-full">
@@ -29,9 +28,6 @@ export default function MainNav({ items, children }: MainNavProps) {
 
       {items?.length ? (
         <div className="flex gap-6">
-          <div className="w-full md:flex hidden flex-1 md:w-auto md:flex-none">
-            <CommandMenu />
-          </div>
           <nav className="hidden md:flex gap-6">
             {items?.map((item, index) => {
               return (

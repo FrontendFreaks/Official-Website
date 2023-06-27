@@ -1,3 +1,4 @@
+import { CommandMenu } from "@/components/command-menu";
 import { Icons } from "@/components/icons";
 import MainNav from "@/components/layout/main-nav";
 import { DocsSidebarNav } from "@/components/layout/sidebar-nav";
@@ -19,7 +20,10 @@ const CourseRootLayout = ({ children }: BatchRootLayoutProps) => {
           </MainNav>
 
           <div className="flex flex-1 items-center space-x-4 sm:justify-end">
-            <nav className="flex space-x-4">
+            <nav className="flex space-x-4 items-center">
+              <div className=" px-3 hidden md:flex">
+                <CommandMenu />
+              </div>
               <Link href="/" target="_blank" rel="noreferrer">
                 <Icons.gitHub className="h-7 w-7" />
                 <span className="sr-only">GitHub</span>

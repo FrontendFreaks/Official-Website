@@ -1,8 +1,10 @@
 import { Faq } from "@/components/faq";
 import Tracks from "@/components/tracks";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -32,8 +34,15 @@ export default function Home() {
             the...
           </p>
           <div className="flex gap-4">
-            <Button variant="secondary">Join Community</Button>
-            <Button>Join Mentorship</Button>
+            <Link
+              href="/"
+              className={cn(buttonVariants({ variant: "outline" }))}
+            >
+              Join Community
+            </Link>
+            <Link href="/batch" className={cn(buttonVariants())}>
+              Join Mentorship
+            </Link>
           </div>
         </div>
       </section>
