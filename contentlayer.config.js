@@ -36,9 +36,29 @@ export const Batch = defineDocumentType(() => ({
   computedFields,
 }));
 
+export const Doc = defineDocumentType(() => ({
+  name: "Doc",
+  filePathPattern: `docs/**/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: {
+      type: "string",
+      required: true,
+    },
+    description: {
+      type: "string",
+    },
+    published: {
+      type: "boolean",
+      default: true,
+    },
+  },
+  computedFields,
+}));
+
 export default makeSource({
   contentDirPath: "./content",
-  documentTypes: [Batch],
+  documentTypes: [Batch, Doc],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [

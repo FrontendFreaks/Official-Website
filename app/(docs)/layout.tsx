@@ -1,7 +1,9 @@
 import { CommandMenu } from "@/components/command-menu";
 import { Icons } from "@/components/icons";
+import { DocSideNav } from "@/components/layout/docs-nav";
 import MainNav from "@/components/layout/main-nav";
 import { DocsSidebarNav } from "@/components/layout/sidebar-nav";
+import { DocumentationConfig } from "@/config/docs";
 import { docsConfig } from "@/config/sidebar";
 import Link from "next/link";
 
@@ -15,7 +17,7 @@ const CourseRootLayout = ({ children }: BatchRootLayoutProps) => {
       <header className="sticky top-0 z-40 w-full border-b bg-background">
         <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
           <MainNav items={docsConfig.mainNav}>
-            <DocsSidebarNav items={docsConfig.sidebarNav} />
+            <DocSideNav items={DocumentationConfig} />
           </MainNav>
 
           <div className="flex flex-1 items-center space-x-4 sm:justify-end">

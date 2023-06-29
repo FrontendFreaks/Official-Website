@@ -1,0 +1,145 @@
+---
+title: Getting Started
+description: Welcome to the Courseify Documentation.
+---
+
+<Callout type="calm">
+
+Here you should find everything you need from getting started with creating content.
+
+</Callout>
+
+## Understanding the folder structure
+
+For writing you may primarly be working on `./content` folder. The `course/index.mdx` files give the structure for [docs](https://courseify-omega.vercel.app/docs) page.
+
+- `/content/js` - Specify js course
+
+<Callout type="warning">
+  Naming convention is upto to you just make sure there are no spaces between
+  name
+</Callout>
+
+The example of Javascript course which has `4 pages`.
+
+```mdx
+content/js/
+├── index.mdx - the intro page
+├── basic.mdx
+├── intermediate.mdx
+└── advance.mdx
+```
+
+If you want to create a course let's say `css` you can add a new folder to `./content`, For example
+
+```mdx
+content/css/
+├── index.mdx - the intro page
+├── page1.mdx
+├── page2.mdx
+└── page3.mdx
+```
+
+<Callout type="info">
+  There is no limit to number of pages, so write as much you want
+</Callout>
+
+### Add Content to `.MDX` files
+
+Add content Using React components in Markdown using MDX.
+
+```mdx
+    ---
+
+title: Getting Started
+description: Welcome to the Courseify Documentation.
+
+---
+
+        Write anything to want using the MDX components
+```
+
+<Callout type="danger">
+  Make sure to add a title and description to `.mdx files` either they won't
+  work
+</Callout>
+
+### Update the links in `.config/docs.ts`
+
+As the content is generated now the only remaining part is to show it
+
+- Go to `.config/course.ts`
+- Add the links to Newly generated content
+
+```mdx
+...
+sidebarNav: [
+{
+title: "Css",
+items: [
+{
+title: "Introduction",
+href: "/courses/css",
+},
+{
+title: "topic",
+href: "/courses/css/topic-name",
+}
+...
+],
+},
+```
+
+<Callout type="danger">
+  The above code to work Make sure you have `index.mdx` and `topic-name.mdx` in
+  `./content/css/`.
+</Callout>
+
+- Links without `topic name` go to `index.mdx` in that folder
+- `courses/css` reffer to `.content/css/index.mdx`
+- `courses/css/topic-name` reffers to `.content/css/topic-name.mdx`
+
+## Congrats You made it to the end
+
+Now Raise a pull request Lets other people feedback on it
+
+<div className="flex justify-center">
+  <Image src="/images/pic3.svg" width="350" height="200" alt="Image" />
+</div>
+
+Reffer to the links below for understanding the flow of content
+
+<Callout>
+
+This is not the only structure or flow for writing content you can write however you want using the [components](https://courseify-omega.vercel.app/docs/components) provide here also you can make custom components as you like.
+
+</Callout>
+
+<div className="grid sm:grid-cols-2 gap-4 mt-6">
+    <Card href="/courses/js">
+        <Image
+        src="/images/pic1.svg"
+        width="350"
+        height="200"
+        alt="Image"
+        />
+
+        ### Javascript
+        Curated Javascript Topics and Resources
+    </Card>
+
+    <Card href="/courses/css" disabled>
+    <Image
+        src="/images/pic4.svg"
+        width="350"
+        height="200"
+        alt="Image"
+        />
+
+    ### Css
+
+Css made easy with this Guide
+
+    </Card>
+
+</div>
