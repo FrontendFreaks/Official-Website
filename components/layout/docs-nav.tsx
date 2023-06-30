@@ -4,18 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
-import {
-  NavItem,
-  SidebarNav,
-  SidebarNavItem,
-  documentationConfig,
-} from "@/types";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "../ui/accordion";
+import { NavItem, SidebarNavItem, documentationConfig } from "@/types";
 
 export interface DocsSidebarNavProps {
   items: documentationConfig;

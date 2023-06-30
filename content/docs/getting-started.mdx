@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-description: Welcome to the Courseify Documentation.
+description: Welcome to the Frontend Freaks Documentation.
 ---
 
 <Callout type="calm">
@@ -11,29 +11,30 @@ Here you should find everything you need from getting started with creating cont
 
 ## Understanding the folder structure
 
-For writing you may primarly be working on `./content` folder. The `course/index.mdx` files give the structure for [docs](https://courseify-omega.vercel.app/docs) page.
+For writing you may primarly be working on `./content` folder. The `batch/index.mdx` files give the structure for [docs](https://frontend-freaks-website.vercel.app/batch) page.
 
-- `/content/js` - Specify js course
+- `/batch/learn` - Specify learn batch
 
 <Callout type="warning">
   Naming convention is upto to you just make sure there are no spaces between
   name
 </Callout>
 
-The example of Javascript course which has `4 pages`.
+The example of learn batch which has `4 pages` and each has some more pages.
 
 ```mdx
-content/js/
+batch/learn/
 ├── index.mdx - the intro page
-├── basic.mdx
-├── intermediate.mdx
-└── advance.mdx
+├── html - folder
+├── github - folder
+├── css - folder
+└── js - folder
 ```
 
-If you want to create a course let's say `css` you can add a new folder to `./content`, For example
+If you want to add new page to learn css page let's say `layouts` you can add a new folder to `./content/learn/css`, For example
 
 ```mdx
-content/css/
+batch/learn/css/
 ├── index.mdx - the intro page
 ├── page1.mdx
 ├── page2.mdx
@@ -52,10 +53,9 @@ Add content Using React components in Markdown using MDX.
     ---
 
 title: Getting Started
-description: Welcome to the Courseify Documentation.
+description: Welcome to the Documentation.
 
 ---
-
         Write anything to want using the MDX components
 ```
 
@@ -64,82 +64,102 @@ description: Welcome to the Courseify Documentation.
   work
 </Callout>
 
-### Update the links in `.config/docs.ts`
+### Update the links in `.config/sidebar.ts`
 
 As the content is generated now the only remaining part is to show it
 
-- Go to `.config/course.ts`
+- Go to `.config/sidebar.ts`
 - Add the links to Newly generated content
 
 ```mdx
 ...
-sidebarNav: [
-{
-title: "Css",
-items: [
-{
-title: "Introduction",
-href: "/courses/css",
-},
-{
-title: "topic",
-href: "/courses/css/topic-name",
-}
-...
-],
-},
+ sidebarNav: [
+    {
+      title: "Getting Started",
+      items: [
+        {
+          title: "Introduction",
+          href: "/batch",
+        },
+      ],
+    },
+    {
+      title: "Learn",
+      items: [
+        {
+          title: "Html",
+          items: [
+            {
+              title: "basic",
+              href: "/batch/learn/html/basic",
+            },
+             {
+              title: "new page",
+              href: "/batch/learn/html/new-page",
+            },
+          ],
+        },
+       ...
+      ],
+    },
+   ...
 ```
 
-<Callout type="danger">
-  The above code to work Make sure you have `index.mdx` and `topic-name.mdx` in
-  `./content/css/`.
-</Callout>
-
 - Links without `topic name` go to `index.mdx` in that folder
-- `courses/css` reffer to `.content/css/index.mdx`
-- `courses/css/topic-name` reffers to `.content/css/topic-name.mdx`
+- `batch/learn` reffer to `.content/batch/learn/index.mdx`
+- `batch/learn/html/topic-name` reffers to `.content/batch/learn/html/topic-name.mdx`
 
 ## Congrats You made it to the end
 
 Now Raise a pull request Lets other people feedback on it
 
 <div className="flex justify-center">
-  <Image src="/images/pic3.svg" width="350" height="200" alt="Image" />
+  <Image src="/construction.svg" width="350" height="200" alt="Image" />
 </div>
 
 Reffer to the links below for understanding the flow of content
 
 <Callout>
 
-This is not the only structure or flow for writing content you can write however you want using the [components](https://courseify-omega.vercel.app/docs/components) provide here also you can make custom components as you like.
+This is not the only structure or flow for writing content you can write however you want using the [components](https://frontend-freaks-website.vercel.app/docs/components) provide here also you can make custom components as you like.
 
 </Callout>
 
-<div className="grid sm:grid-cols-2 gap-4 mt-6">
-    <Card href="/courses/js">
+<div className="flex md:flex-row flex-col gap-4 mt-6">
+    <Card href="/batch/learn">
         <Image
-        src="/images/pic1.svg"
+        src="/learn_img.svg"
         width="350"
         height="200"
         alt="Image"
         />
 
-        ### Javascript
+        #### Learn
         Curated Javascript Topics and Resources
     </Card>
 
-    <Card href="/courses/css" disabled>
+    <Card href="/batch/build">
     <Image
-        src="/images/pic4.svg"
+        src="/build_img.svg"
         width="350"
         height="200"
         alt="Image"
         />
 
-    ### Css
+        #### Build
+        Css made easy with this Guide
+    </Card>
 
-Css made easy with this Guide
+     <Card href="/batch/hire">
+        <Image
+        src="/hire_img.svg"
+        width="350"
+        height="200"
+        alt="Image"
+        />
 
+        #### Hire
+        Curated Javascript Topics and Resources
     </Card>
 
 </div>

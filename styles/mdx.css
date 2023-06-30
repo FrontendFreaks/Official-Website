@@ -4,7 +4,7 @@
   box-decoration-break: clone;
 }
 
-[data-rehype-pretty-code-fragment] .line {
+[data-rehype-pretty-code-fragment] [data-line] {
   @apply px-4 py-1;
 }
 

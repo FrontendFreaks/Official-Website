@@ -144,7 +144,7 @@ export const docsConfig: DocsConfig = {
     },
     {
       title: "join",
-      href: "#join",
+      href: "/batch",
     },
     {
       title: "docs",
