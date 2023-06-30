@@ -1,0 +1,165 @@
+---
+title: Getting Started
+description: Welcome to the Frontend Freaks Documentation.
+---
+
+<Callout type="calm">
+
+Here you should find everything you need from getting started with creating content.
+
+</Callout>
+
+## Understanding the folder structure
+
+For writing you may primarly be working on `./content` folder. The `batch/index.mdx` files give the structure for [docs](https://frontend-freaks-website.vercel.app/batch) page.
+
+- `/batch/learn` - Specify learn batch
+
+<Callout type="warning">
+  Naming convention is upto to you just make sure there are no spaces between
+  name
+</Callout>
+
+The example of learn batch which has `4 pages` and each has some more pages.
+
+```mdx
+batch/learn/
+├── index.mdx - the intro page
+├── html - folder
+├── github - folder
+├── css - folder
+└── js - folder
+```
+
+If you want to add new page to learn css page let's say `layouts` you can add a new folder to `./content/learn/css`, For example
+
+```mdx
+batch/learn/css/
+├── index.mdx - the intro page
+├── page1.mdx
+├── page2.mdx
+└── page3.mdx
+```
+
+<Callout type="info">
+  There is no limit to number of pages, so write as much you want
+</Callout>
+
+### Add Content to `.MDX` files
+
+Add content Using React components in Markdown using MDX.
+
+```mdx
+    ---
+
+title: Getting Started
+description: Welcome to the Documentation.
+
+---
+        Write anything to want using the MDX components
+```
+
+<Callout type="danger">
+  Make sure to add a title and description to `.mdx files` either they won't
+  work
+</Callout>
+
+### Update the links in `.config/sidebar.ts`
+
+As the content is generated now the only remaining part is to show it
+
+- Go to `.config/sidebar.ts`
+- Add the links to Newly generated content
+
+```mdx
+...
+ sidebarNav: [
+    {
+      title: "Getting Started",
+      items: [
+        {
+          title: "Introduction",
+          href: "/batch",
+        },
+      ],
+    },
+    {
+      title: "Learn",
+      items: [
+        {
+          title: "Html",
+          items: [
+            {
+              title: "basic",
+              href: "/batch/learn/html/basic",
+            },
+             {
+              title: "new page",
+              href: "/batch/learn/html/new-page",
+            },
+          ],
+        },
+       ...
+      ],
+    },
+   ...
+```
+
+- Links without `topic name` go to `index.mdx` in that folder
+- `batch/learn` reffer to `.content/batch/learn/index.mdx`
+- `batch/learn/html/topic-name` reffers to `.content/batch/learn/html/topic-name.mdx`
+
+## Congrats You made it to the end
+
+Now Raise a pull request Lets other people feedback on it
+
+<div className="flex justify-center">
+  <Image src="/construction.svg" width="350" height="200" alt="Image" />
+</div>
+
+Reffer to the links below for understanding the flow of content
+
+<Callout>
+
+This is not the only structure or flow for writing content you can write however you want using the [components](https://frontend-freaks-website.vercel.app/docs/components) provide here also you can make custom components as you like.
+
+</Callout>
+
+<div className="flex md:flex-row flex-col gap-4 mt-6">
+    <Card href="/batch/learn">
+        <Image
+        src="/learn_img.svg"
+        width="350"
+        height="200"
+        alt="Image"
+        />
+
+        #### Learn
+        Curated Javascript Topics and Resources
+    </Card>
+
+    <Card href="/batch/build">
+    <Image
+        src="/build_img.svg"
+        width="350"
+        height="200"
+        alt="Image"
+        />
+
+        #### Build
+        Css made easy with this Guide
+    </Card>
+
+     <Card href="/batch/hire">
+        <Image
+        src="/hire_img.svg"
+        width="350"
+        height="200"
+        alt="Image"
+        />
+
+        #### Hire
+        Curated Javascript Topics and Resources
+    </Card>
+
+</div>

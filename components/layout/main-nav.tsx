@@ -18,6 +18,7 @@ export default function MainNav({ items, children }: MainNavProps) {
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
 
   return (
+
     <div className="flex gap-6 md:gap-10 w-full">
       <Link href="/" className="hidden items-center space-x-2 md:flex">
         <Icons.logo />
