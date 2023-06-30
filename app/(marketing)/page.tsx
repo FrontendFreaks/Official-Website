@@ -16,15 +16,15 @@ export default function Home() {
         }}
       >
         <div className="flex flex-col gap-4">
-          <div className="md:text-5xl text-3xl font-bold text-slate-700">
+          <div className="md:text-5xl text-3xl font-bold text-slate-700 dark:text-white">
             <h1>
-              <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent dark:text-white">
                 Unleash
               </span>{" "}
               Your
             </h1>
             Frontend{" "}
-            <span className="bg-gradient-to-r from-red-400 via-orange-300 to-amber-200 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-red-400 via-orange-300 to-amber-200 bg-clip-text text-transparent dark:text-white">
               Superpowers
             </span>
           </div>
@@ -56,9 +56,9 @@ export default function Home() {
           className="-mb-10"
         />
         <div className="max-w-md flex flex-col gap-10">
-          <h4 className="md:text-5xl text-2xl font-bold text-slate-700">
+          <h4 className="md:text-5xl text-2xl font-bold text-slate-700 dark:text-white">
             Premium{" "}
-            <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent dark:text-white">
               Learning
             </span>{" "}
             Experience
@@ -74,7 +74,7 @@ export default function Home() {
               />
               <div>
                 <p className="font-bold md:text-xl">Learn</p>
-                <p className="text-sm text-slate-500">
+                <p className="text-sm text-slate-500 dark:text-white">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
               </div>
@@ -88,7 +88,7 @@ export default function Home() {
               />
               <div>
                 <p className="font-bold md:text-xl">Build</p>
-                <p className="text-sm text-slate-500">
+                <p className="text-sm text-slate-500 dark:text-white">
                   Lorem ipsum dolor sit amet.
                 </p>
               </div>
@@ -97,7 +97,7 @@ export default function Home() {
               <Image src="/icons/hire.svg" alt="learn" width={40} height={40} />
               <div>
                 <p className="font-bold md:text-xl">Hire</p>
-                <p className="text-sm text-slate-500">
+                <p className="text-sm text-slate-500 dark:text-white">
                   Lorem ipsum dolor sit amet consectetu.
                 </p>
               </div>
@@ -137,3 +137,5 @@ export default function Home() {
     </main>
   );
 }
+
+
