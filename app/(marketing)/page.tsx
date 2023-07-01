@@ -2,6 +2,7 @@ import { Faq } from "@/components/faq";
 import Tracks from "@/components/tracks";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import VideoPlayer from "@/components/video-player";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
