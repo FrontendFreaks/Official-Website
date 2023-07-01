@@ -18,7 +18,7 @@ export const DocsHeader = ({
           {title}
         </h1>
         {text && (
-          <p className="max-w-[42rem] md:text-lg leading-normal text-slate-700 sm:text-lg sm:leading-8">
+          <p className="max-w-[42rem] md:text-lg leading-normal text-slate-700 sm:text-lg sm:leading-8 dark:text-slate-300">
             {text}
           </p>
         )}

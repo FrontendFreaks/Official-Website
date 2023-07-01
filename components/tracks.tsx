@@ -8,14 +8,22 @@ type Props = {};
 export default function Tracks({}: Props) {
   return (
     <section className="text-center md:my-20 my-10">
-      <h4 className="md:text-3xl text-xl text-black font-bold dark:text-white">Our Tracks</h4>
+      <h4 className="md:text-3xl text-xl text-black font-bold dark:text-white">
+        Our Tracks
+      </h4>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, autem.
       </p>
 
       <div className="flex gap-6 mt-8 md:flex-row flex-col">
         <div className="flex flex-col gap-3 items-center border p-4 rounded-lg">
-          <Image src="/learn_img.svg" alt="learn" width={250} height={250} className="bg-white" />
+          <Image
+            src="/learn_img.svg"
+            alt="learn"
+            width={250}
+            height={250}
+            className="rounded bg-white"
+          />
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold ">Learn The Latest Skills</h3>
             <p className="text-xs text-slate-600 max-w-xs dark:text-white">
@@ -32,7 +40,13 @@ export default function Tracks({}: Props) {
           </Link>
         </div>
         <div className="flex flex-col gap-3 items-center border p-4 rounded-lg">
-          <Image src="/build_img.svg" alt="learn" width={250} height={250} className="bg-white" />
+          <Image
+            src="/build_img.svg"
+            alt="learn"
+            width={250}
+            height={250}
+            className="rounded bg-white"
+          />
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold ">Build Projects</h3>
             <p className="text-xs text-slate-600 max-w-xs dark:text-white">
@@ -49,7 +63,13 @@ export default function Tracks({}: Props) {
           </Link>
         </div>
         <div className="flex flex-col gap-3 items-center border p-4 rounded-lg">
-          <Image src="/hire_img.svg" alt="learn" width={250} height={250} className="bg-white" />
+          <Image
+            src="/hire_img.svg"
+            alt="learn"
+            width={250}
+            height={250}
+            className="rounded bg-white"
+          />
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold ">Get Hired</h3>
             <p className="text-xs text-slate-600 max-w-xs dark:text-white">
