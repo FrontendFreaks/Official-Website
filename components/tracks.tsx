@@ -14,8 +14,8 @@ export default function Tracks({}: Props) {
       </p>
 
       <div className="flex gap-6 mt-8 md:flex-row flex-col">
-        <div className="flex flex-col gap-3 items-center border p-4 rounded-lg dark:bg-[#35373a]">
-          <Image src="/learn_img.svg" alt="learn" width={250} height={250}  />
+        <div className="flex flex-col gap-3 items-center border p-4 rounded-lg">
+          <Image src="/learn_img.svg" alt="learn" width={250} height={250} className="bg-white" />
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold ">Learn The Latest Skills</h3>
             <p className="text-xs text-slate-600 max-w-xs dark:text-white">
@@ -31,8 +31,8 @@ export default function Tracks({}: Props) {
             Join
           </Link>
         </div>
-        <div className="flex flex-col gap-3 items-center border p-4 rounded-lg dark:bg-[#35373a]">
-          <Image src="/build_img.svg" alt="learn" width={250} height={250} />
+        <div className="flex flex-col gap-3 items-center border p-4 rounded-lg">
+          <Image src="/build_img.svg" alt="learn" width={250} height={250} className="bg-white" />
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold ">Build Projects</h3>
             <p className="text-xs text-slate-600 max-w-xs dark:text-white">
@@ -48,8 +48,8 @@ export default function Tracks({}: Props) {
             Join
           </Link>
         </div>
-        <div className="flex flex-col gap-3 items-center border p-4 rounded-lg dark:bg-[#35373a]">
-          <Image src="/hire_img.svg" alt="learn" width={250} height={250} />
+        <div className="flex flex-col gap-3 items-center border p-4 rounded-lg">
+          <Image src="/hire_img.svg" alt="learn" width={250} height={250} className="bg-white" />
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold ">Get Hired</h3>
             <p className="text-xs text-slate-600 max-w-xs dark:text-white">

@@ -20,14 +20,14 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
   const pathname = usePathname();
 
   return items.length ? (
-    <div className="w-full text-slate-800">
+    <div className="w-full text-slate-800 ">
       {items.map((item, index) => (
         <div key={index} className={cn("pb-8")}>
-          <h4 className="mb-1 rounded-md py-1 text-base font-medium">
+          <h4 className="mb-1 rounded-md py-1 text-base font-medium dark:text-white">
             {item.title}
           </h4>
           {item.items ? (
-            <div>
+            <div className="dark:text-gray-400">
               {item.items.map((item) => (
                 <>
                   {item.href ? (
