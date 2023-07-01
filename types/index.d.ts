@@ -30,3 +30,10 @@ export type SidebarNav = {
       items: SidebarNavItem[];
     }
 );
+
+export type DocsConfig = {
+  mainNav: NavItem[];
+  sidebarNav: SidebarNav[];
+};
+
+export type documentationConfig = SidebarNavItem[];

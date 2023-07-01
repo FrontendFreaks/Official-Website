@@ -1,0 +1,198 @@
+---
+title: Flex
+description: Comprehensive guide for display flex
+---
+
+<Callout>
+
+Want to improve this page?. Raise a issue on [@github](https://github.com/ManishBisht777/frontend-freaks-website).
+
+</Callout>
+
+## Whats on this page?
+
+- 🎨 Introduction to Flexbox: Learn the basics of CSS Flexbox for flexible and responsive layouts.
+- 🔍 Understanding Flexbox: Explore the display, flex-direction, and flex-wrap properties to control the layout and wrapping behavior.
+- 💡 CSS properties alignment and sizing: justify-content, align-items, gap, order, flex properties.
+
+<Tabs defaultValue="learn">
+
+<TabsList>
+  <TabsTrigger value="learn">Learn</TabsTrigger>
+  <TabsTrigger value="assignment">Assignment</TabsTrigger>
+  <TabsTrigger value="trivia">Trivia</TabsTrigger>
+  <TabsTrigger value="playground">Playground</TabsTrigger>
+
+</TabsList>
+
+<TabsContent value="learn">
+
+ ## 📺 Watch Now
+
+<VideoPlayer src="https://www.youtube.com/watch?v=Qu0dbQxm6II"/>
+
+<Callout type="info">
+    We hope that you found the tutorial video helpful in understanding the basic concepts of Flexbox, You can refer this notes 📝 for quick revision.
+</Callout>
+
+## Notes
+
+### Display  
+
+```css
+/* Set the container to a flexbox */
+.container {
+  display: flex;
+}
+```
+
+### Flex Direction  
+
+```css
+/* Set the main axis direction */
+.container {
+  flex-direction: row | row-reverse | column | column-reverse;
+}
+```
+
+### Flex Wrap  
+
+```css
+/* Allow items to wrap */
+.container {
+  flex-wrap: nowrap | wrap | wrap-reverse;
+}
+```
+
+### Flex Flow  
+
+```css
+/* Combine flex-direction and flex-wrap */
+.container {
+  flex-flow: row wrap;
+}
+```
+
+### Justify Content  
+
+```css
+/* Align items along the main axis */
+.container {
+  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+}
+```
+
+### Align Items  
+
+```css
+/* Align items along the cross axis */
+.container {
+  align-items: stretch | flex-start | flex-end | center | baseline;
+}
+```
+
+### Align Content  
+
+```css
+/* Align wrapped lines along the cross axis */
+.container {
+  align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+}
+```
+
+### Gap  
+
+```css
+/* Set the gap between flex items */
+.container {
+  gap: 10px;
+}
+```
+
+### Order  
+
+```css
+/* Change the order of flex items */
+.item {
+  order: 2;
+}
+```
+
+### Flex Grow  
+
+```css
+/* Allow an item to grow to fill available space */
+.item {
+  flex-grow: 1;
+}
+```
+
+### Flex Shrink  
+
+```css
+/* Allow an item to shrink to fit available space */
+.item {
+  flex-shrink: 1;
+}
+```
+
+### Flex Basis  
+
+```css
+/* Set the initial main size of an item */
+.item {
+  flex-basis: auto | 0 | 50%;
+}
+```
+
+### Flex  
+
+```css
+.item {
+    flex: 3 5 500px; /* shorthand for flex-grow flex-shrink flex-basis  */
+}
+```
+
+### Align Self  
+
+```css
+.item {
+  align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+```
+
+</TabsContent>
+
+<TabsContent value="assignment">
+    
+    ### 📌🔨 Task
+
+    - 📝 Now, you have all the required knowledge to completely design the assignment you solved earlier.
+    - 🎨 Create your portfolio, showcasing all the sections, and ensuring it is responsive. You can draw inspiration from this portfolio for design ideas.
+    - 💼 Here's an example of the portfolio you can use as inspiration [sujit](https://thesujitmemane.vercel.app/) and [manish](https://bisht-dev.netlify.app/)
+
+     ### ❓Unclear with concepts? 📺 Watch This
+
+    <VideoPlayer src="https://www.youtube.com/watch?v=Qu0dbQxm6II"/>
+
+
+    <Callout type="info">
+
+    ### 📣 Done Building?
+    🎉 It's time to showcase your portfolio! Share it on LinkedIn and Twitter, tag me, and use `#FrontendWithVishal` to connect with other developers and get feedback on your work.
+
+    </Callout>
+
+   
+
+</TabsContent>
+
+<TabsContent value="trivia">
+    Trivia Questions on css flex
+</TabsContent>
+
+<TabsContent value="playground">
+    Coming Soon
+</TabsContent>
+
+</Tabs>
