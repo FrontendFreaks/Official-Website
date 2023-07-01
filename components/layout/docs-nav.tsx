@@ -17,7 +17,7 @@ export function DocSideNav({ items }: DocsSidebarNavProps) {
     <div className="w-full text-slate-800">
       {items.map((item, index) => (
         <div key={index} className={cn("pb-8")}>
-          <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-medium">
+          <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-medium text-muted-foreground">
             {item.title}
           </h4>
           {item.items ? (
@@ -61,7 +61,7 @@ export function DocsSidebarNavItem({
   return item.href ? (
     <Link
       href={item.href}
-      className={cn("flex w-full items-center rounded-md p-2 hover:underline", {
+      className={cn("flex w-full items-center rounded-md p-2 hover:underline text-foreground", {
         "bg-muted": pathname === item.href,
       })}
     >
