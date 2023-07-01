@@ -66,7 +66,7 @@ export const docsConfig: DocsConfig = {
             },
             {
               title: "Flex",
-              href: "/batch/learn/html/basic",
+              href: "/batch/learn/css/flex",
             },
             {
               title: "Grid",
