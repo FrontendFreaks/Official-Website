@@ -2,7 +2,6 @@ import { Faq } from "@/components/faq";
 import Tracks from "@/components/tracks";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import VideoPlayer from "@/components/video-player";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,7 +16,7 @@ export default function Home() {
         }}
       >
         <div className="flex flex-col gap-4">
-          <div className="md:text-5xl text-3xl font-bold text-slate-700">
+          <div className="md:text-5xl text-3xl font-bold text-slate-700 dark:text-white">
             <h1>
               <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
                 Unleash
@@ -48,7 +47,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full flex md:flex-row flex-col justify-center md:gap-40 gap-20 bg-amber-100/20 md:px-20 md:pt-10 py-10 px-5 md:my-20">
+      <section className="w-full flex md:flex-row flex-col justify-center md:gap-40 gap-20 dark:bg-slate-100 rounded bg-amber-100/20 md:px-20 md:pt-10 py-10 px-5 md:my-20">
         <Image
           src="/bg.svg"
           alt="girl working on a laptop"
@@ -74,7 +73,9 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <p className="font-bold md:text-xl">Learn</p>
+                <p className="font-bold md:text-xl dark:text-slate-600">
+                  Learn
+                </p>
                 <p className="text-sm text-slate-500">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
@@ -88,7 +89,9 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <p className="font-bold md:text-xl">Build</p>
+                <p className="font-bold md:text-xl dark:text-slate-600">
+                  Build
+                </p>
                 <p className="text-sm text-slate-500">
                   Lorem ipsum dolor sit amet.
                 </p>
@@ -97,7 +100,7 @@ export default function Home() {
             <div className="flex gap-4 items-center">
               <Image src="/icons/hire.svg" alt="learn" width={40} height={40} />
               <div>
-                <p className="font-bold md:text-xl">Hire</p>
+                <p className="font-bold md:text-xl dark:text-slate-600">Hire</p>
                 <p className="text-sm text-slate-500">
                   Lorem ipsum dolor sit amet consectetu.
                 </p>

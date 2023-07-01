@@ -2,6 +2,7 @@ import { CommandMenu } from "@/components/command-menu";
 import { Icons } from "@/components/icons";
 import MainNav from "@/components/layout/main-nav";
 import { DocsSidebarNav } from "@/components/layout/sidebar-nav";
+import { navConfig } from "@/config/nav";
 import { docsConfig } from "@/config/sidebar";
 import Link from "next/link";
 
