@@ -17,12 +17,14 @@ export function DocSideNav({ items }: DocsSidebarNavProps) {
     <div className="w-full text-slate-800">
       {items.map((item, index) => (
         <div key={index} className={cn("pb-8")}>
-          <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-medium">
+          <h4 className="mb-1 rounded-md py-1 text-base font-medium dark:text-white">
             {item.title}
           </h4>
-          {item.items ? (
-            <DocsSidebarNavItems items={item.items} pathname={pathname} />
-          ) : null}
+          <div className="dark:text-gray-400">
+            {item.items ? (
+              <DocsSidebarNavItems items={item.items} pathname={pathname} />
+              ) : null}
+          </div>
         </div>
       ))}
     </div>
