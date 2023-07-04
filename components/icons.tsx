@@ -32,6 +32,7 @@ import {
   Video,
   MessageSquare,
   LayoutDashboard,
+  Link,
   X,
   type Icon as LucideIcon,
 } from "lucide-react";
@@ -41,6 +42,7 @@ export type Icon = LucideIcon;
 export const Icons = {
   logo: Anchor,
   logout: LogOut,
+  link: Link,
   comment: MessageSquare,
   dashboard: LayoutDashboard,
   star: Star,

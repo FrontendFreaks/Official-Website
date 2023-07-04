@@ -8,6 +8,7 @@ import { Callout } from "./callout";
 import { MdxCard } from "./mdx-card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "../ui/tabs";
 import VideoPlayer from "../video-player";
+import HeadingWithLink from "./link";
 
 const components = {
   h1: ({ className, ...props }) => (
@@ -154,6 +155,7 @@ const components = {
   Callout,
   Card: MdxCard,
   VideoPlayer,
+  HeadingWithLink,
   Tabs: ({ className, ...props }: React.ComponentProps<typeof Tabs>) => (
     <Tabs className={cn("relative mt-6 w-full", className)} {...props} />
   ),
