@@ -28,15 +28,23 @@ export const docsConfig: DocsConfig = {
           items: [
             {
               title: "basic",
-              href: "/batch/learn/html/basic",
+              href: "/batch/learn/js/intro",
             },
             {
-              title: "Flex",
-              href: "/batch/learn/html/basic",
+              title: "DOM",
+              href: "/batch/learn/js/dom",
             },
             {
-              title: "Grid",
-              href: "/batch/learn/html/basic",
+              title: "Google Keep",
+              href: "/batch/learn/js/google-keep",
+            },
+            {
+              title: "Wack a mole",
+              href: "/batch/learn/js/wack-a-mole",
+            },
+            {
+              title: "Github Wrapper",
+              href: "/batch/learn/js/github-wrapper",
             },
           ],
         },
