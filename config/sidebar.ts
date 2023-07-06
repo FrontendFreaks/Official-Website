@@ -132,16 +132,8 @@ export const docsConfig: DocsConfig = {
       title: "Hired",
       items: [
         {
-          title: "Linkedin",
-          href: "/batch/learn/html/basic",
-        },
-        {
-          title: "Wellfound",
-          href: "/batch/learn/html/basic",
-        },
-        {
-          title: "Resume",
-          href: "/batch/learn/html/basic",
+          title: "Profile and Resume",
+          href: "/batch/hire/hire",
         },
       ],
     },
