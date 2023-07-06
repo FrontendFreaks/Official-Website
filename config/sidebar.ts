@@ -100,16 +100,29 @@ export const docsConfig: DocsConfig = {
           title: "Interview Qs",
           items: [
             {
-              title: "basic",
-              href: "/batch/learn/html/basic",
+              title: "Tabs",
+              href: "/batch/build/interview/tabs",
             },
             {
-              title: "Flex",
-              href: "/batch/learn/html/basic",
+              title: "Star rating",
+              href: "/batch/build/interview/star-rating",
+            },
+
+            {
+              title: "Gerenate table",
+              href: "/batch/build/interview/table",
             },
             {
-              title: "Grid",
-              href: "/batch/learn/html/basic",
+              title: "Counter",
+              href: "/batch/build/interview/counter",
+            },
+            {
+              title: "Like button",
+              href: "/batch/build/interview/like",
+            },
+            {
+              title: "Transfer List",
+              href: "/batch/build/interview/transfer-list",
             },
           ],
         },
