@@ -84,19 +84,15 @@ export const docsConfig: DocsConfig = {
           items: [
             {
               title: "Fundamentals",
-              href: "/batch/learn/html/basic",
+              href: "/batch/build/react/fundamentals",
             },
             {
               title: "Todo App",
-              href: "/batch/learn/html/basic",
+              href: "/batch/build/react/todo",
             },
             {
               title: "Quiz App",
-              href: "/batch/learn/html/basic",
-            },
-            {
-              title: "Weather App",
-              href: "/batch/learn/html/basic",
+              href: "/batch/build/react/quiz",
             },
           ],
         },
