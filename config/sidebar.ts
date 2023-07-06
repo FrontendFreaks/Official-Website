@@ -53,15 +53,7 @@ export const docsConfig: DocsConfig = {
           items: [
             {
               title: "basic",
-              href: "/batch/learn/html/basic",
-            },
-            {
-              title: "Flex",
-              href: "/batch/learn/html/basic",
-            },
-            {
-              title: "Grid",
-              href: "/batch/learn/html/basic",
+              href: "/batch/learn/github/intro",
             },
           ],
         },
@@ -70,7 +62,7 @@ export const docsConfig: DocsConfig = {
           items: [
             {
               title: "basic",
-              href: "/batch/learn/html/basic",
+              href: "/batch/learn/css/basic",
             },
             {
               title: "Flex",
@@ -78,7 +70,7 @@ export const docsConfig: DocsConfig = {
             },
             {
               title: "Grid",
-              href: "/batch/learn/html/basic",
+              href: "/batch/learn/css/grid",
             },
           ],
         },
