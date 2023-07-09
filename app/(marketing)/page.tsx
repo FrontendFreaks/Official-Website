@@ -130,11 +130,11 @@ export default function Home() {
           </p>
 
           <div className="flex gap-2 md:flex-row flex-col rounded-sm bg-slate-100 md:rounded-full p-2 md:p-1 mt-4 text-black">
-            <Input
+            <input
               placeholder="Enter your Email "
-              className="bg-transparent border-none placeholder:text-slate-400 focus-visible:ring-offset-0 focus-visible:ring-0 focus-visible:outline-none"
+              className="bg-transparent border border-slate-300 rounded-full px-4 py-1.5 md:border-none placeholder:text-slate-400 focus-visible:ring-offset-0 focus-visible:ring-0 focus-visible:outline-none"
             />
-            <Button className="rounded-full">Subscribe</Button>
+            <Button className="rounded-full text-white bg-[#020820] hover:bg-[#020832]">Subscribe</Button>
           </div>
         </div>
       </section>
