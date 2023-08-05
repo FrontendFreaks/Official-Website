@@ -15,7 +15,9 @@ export function Faq() {
       <div className="grid md:gap-20 md:grid-cols-2 grid-cols-1">
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
-            <AccordionTrigger>What is Frontend Freaks?</AccordionTrigger>
+            <AccordionTrigger className="text-left">
+              What is Frontend Freaks?
+            </AccordionTrigger>
             <AccordionContent>
               Frontend Freaks is a vibrant community founded by Vishal Rajput,
               dedicated to helping individuals in frontend development. We
@@ -24,7 +26,7 @@ export function Faq() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger>
+            <AccordionTrigger className="text-left">
               What is Frontend Developer Mentorship?
             </AccordionTrigger>
             <AccordionContent>
@@ -35,7 +37,7 @@ export function Faq() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger>
+            <AccordionTrigger className="text-left">
               Is Frontend Developer Mentorship paid?
             </AccordionTrigger>
             <AccordionContent>
@@ -47,14 +49,16 @@ export function Faq() {
         </Accordion>
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
-            <AccordionTrigger>When can I join?</AccordionTrigger>
+            <AccordionTrigger className="text-left">
+              When can I join?
+            </AccordionTrigger>
             <AccordionContent>
               You can join our community at any time! Our courses and resources
               are self-paced, allowing you to learn at your own convenience.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger>
+            <AccordionTrigger className="text-left">
               What types of mentorship do you provide?
             </AccordionTrigger>
             <AccordionContent>
@@ -67,7 +71,9 @@ export function Faq() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger>Not sure which batch to join?</AccordionTrigger>
+            <AccordionTrigger className="text-left">
+              Not sure which batch to join?
+            </AccordionTrigger>
             <AccordionContent>
               If you&apos;re confident in your HTML, CSS, and JavaScript skills,
               join batch 2 to learn ReactJS. Otherwise, start with batch 1 to

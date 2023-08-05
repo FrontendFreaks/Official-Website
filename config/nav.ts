@@ -2,19 +2,16 @@ import { NavItem } from "@/types";
 
 export const navConfig: NavItem[] = [
   {
-    title: "home",
+    title: "Learn",
     href: "/",
   },
   {
-    title: "about",
+    title: "Build",
     href: "/",
   },
   {
-    title: "features",
+    title: "Hire",
     href: "#features",
   },
-  {
-    title: "join",
-    href: "#join",
-  },
+  
 ];

@@ -29,13 +29,13 @@ export default function Home() {
             </span>
           </div>
           <p className="max-w-md md:text-lg text-xs">
-            Elearn is a global training provider based across the UK that
-            specialises in accredited and bespoke training courses. We crush
-            the...
+            Unlocking the Power of Stunning Interfaces: Join a Thriving
+            Community Led by an Exceptional Frontend Developer.
           </p>
           <div className="flex gap-4">
             <Link
-              href="/"
+              href="https://discord.com/invite/vee94km4Wh"
+              target="_blank"
               className={cn(buttonVariants({ variant: "outline" }))}
             >
               Join Community
@@ -77,7 +77,7 @@ export default function Home() {
                   Learn
                 </p>
                 <p className="text-sm text-slate-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Master HTML , CSS ,Git and Javascript
                 </p>
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function Home() {
                   Build
                 </p>
                 <p className="text-sm text-slate-500">
-                  Lorem ipsum dolor sit amet.
+                  Built Projects using React , Redux and Next Js
                 </p>
               </div>
             </div>
@@ -102,7 +102,7 @@ export default function Home() {
               <div>
                 <p className="font-bold md:text-xl dark:text-slate-600">Hire</p>
                 <p className="text-sm text-slate-500">
-                  Lorem ipsum dolor sit amet consectetu.
+                  Prepare Yourself for Interviews and Get Hired
                 </p>
               </div>
             </div>
@@ -113,31 +113,6 @@ export default function Home() {
       {/* tracks section */}
       <Tracks />
       <Faq />
-
-      {/* newsletter */}
-      <section className="w-full rounded-xl h-80 mt-10 flex justify-center items-center">
-        <div
-          style={{
-            backgroundImage: `url("/news_bg.svg")`,
-          }}
-          className="md:py-20 md:px-60 py-5 px-10 rounded-xl bg-[#4d2c5e] text-white text-center justify-center items-center flex flex-col bg-contain bg-no-repeat"
-        >
-          <h5 className="md:text-4xl text-2xl font-bold">
-            Subscribe to our newsletter
-          </h5>
-          <p className="md:text-sm text-xs text-slate-100 mt-2">
-            Lorem Ipsum is simply dummy text of the printing.
-          </p>
-
-          <div className="flex gap-2 md:flex-row flex-col rounded-sm bg-slate-100 md:rounded-full p-2 md:p-1 mt-4 text-black">
-            <Input
-              placeholder="Enter your Email "
-              className="bg-transparent border border-slate-300 rounded-full px-4 py-1.5 md:border-none placeholder:text-slate-400 focus-visible:ring-offset-0 focus-visible:ring-0 focus-visible:outline-none"
-            />
-            <Button className="rounded-full text-white dark:bg-black">Subscribe</Button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
