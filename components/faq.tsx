@@ -17,19 +17,31 @@ export function Faq() {
           <AccordionItem value="item-1">
             <AccordionTrigger>What is Frontend Freaks?</AccordionTrigger>
             <AccordionContent>
-            Frontend Freaks is a vibrant community founded by Vishal Rajput, dedicated to helping individuals in frontend development. We provide resources to learn frontend basics, work on practical projects, and stay up-to-date with the latest industry trends.
+              Frontend Freaks is a vibrant community founded by Vishal Rajput,
+              dedicated to helping individuals in frontend development. We
+              provide resources to learn frontend basics, work on practical
+              projects, and stay up-to-date with the latest industry trends.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger>What is Frontend Developer Mentorship?</AccordionTrigger>
+            <AccordionTrigger>
+              What is Frontend Developer Mentorship?
+            </AccordionTrigger>
             <AccordionContent>
-            Frontend Developer Mentorship is our program at Frontend Freaks Community designed to guide newcomers in learning frontend development, building real-world projects, and assisting them in securing internships and jobs.
+              Frontend Developer Mentorship is our program at Frontend Freaks
+              Community designed to guide newcomers in learning frontend
+              development, building real-world projects, and assisting them in
+              securing internships and jobs.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger>Is Frontend Developer Mentorship paid?</AccordionTrigger>
+            <AccordionTrigger>
+              Is Frontend Developer Mentorship paid?
+            </AccordionTrigger>
             <AccordionContent>
-            No, our mentorship programs and resources are completely free of cost. At Frontend Freaks, we believe in making quality education accessible to everyone.
+              No, our mentorship programs and resources are completely free of
+              cost. At Frontend Freaks, we believe in making quality education
+              accessible to everyone.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -37,19 +49,32 @@ export function Faq() {
           <AccordionItem value="item-1">
             <AccordionTrigger>When can I join?</AccordionTrigger>
             <AccordionContent>
-            You can join our community at any time! Our courses and resources are self-paced, allowing you to learn at your own convenience.
+              You can join our community at any time! Our courses and resources
+              are self-paced, allowing you to learn at your own convenience.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger>What types of mentorship do you provide?</AccordionTrigger>
+            <AccordionTrigger>
+              What types of mentorship do you provide?
+            </AccordionTrigger>
             <AccordionContent>
-            We offer three batches of mentorship. The first batch is perfect for beginners, covering HTML, CSS, and JavaScript fundamentals through exciting projects. The second batch focuses on mastering ReactJS and building real-world projects. The third batch provides guidance on job hunting, application strategies, and securing referrals.
+              We offer three batches of mentorship. The first batch is perfect
+              for beginners, covering HTML, CSS, and JavaScript fundamentals
+              through exciting projects. The second batch focuses on mastering
+              ReactJS and building real-world projects. The third batch provides
+              guidance on job hunting, application strategies, and securing
+              referrals.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger>Not sure which batch to join?</AccordionTrigger>
             <AccordionContent>
-            If you're confident in your HTML, CSS, and JavaScript skills, join batch 2 to learn ReactJS. Otherwise, start with batch 1 to establish a solid foundation before diving into ReactJS. If you already have impressive skills and projects, join batch 3 to focus on job applications. Otherwise, joining batch 2 to build real-world projects would be beneficial.
+              If you&apos;re confident in your HTML, CSS, and JavaScript skills,
+              join batch 2 to learn ReactJS. Otherwise, start with batch 1 to
+              establish a solid foundation before diving into ReactJS. If you
+              already have impressive skills and projects, join batch 3 to focus
+              on job applications. Otherwise, joining batch 2 to build
+              real-world projects would be beneficial.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
