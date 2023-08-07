@@ -12,14 +12,16 @@ export default function SiteFooter({}: Props) {
             Home
           </a>
           <a href="/about" className="hover:text-gray-900 mr-4">
-            About
+            Learn
           </a>
-          <Button className="rounded-full">Mentorship</Button>
+          <a href="https://discord.com/invite/vee94km4Wh" target="_blank">
+            <Button className="rounded-full">Mentorship</Button>
+          </a>
           <a href="/features" className="hover:text-gray-900 mr-4 ml-4">
-            Features
+            Build
           </a>
           <a href="/join" className="hover:text-gray-900 mr-4">
-            Join
+            Hire
           </a>
         </div>
       </div>

@@ -9,11 +9,9 @@ export default function Tracks({}: Props) {
   return (
     <section className="text-center md:my-20 my-10">
       <h4 className="md:text-3xl text-xl text-black font-bold dark:text-white">
-        Our Tracks
+        Our Batches
       </h4>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, autem.
-      </p>
+      <p>Master the Frontend Development with Frontend Freaks</p>
 
       <div className="flex gap-6 mt-8 md:flex-row flex-col">
         <div className="flex flex-col gap-3 items-center border p-4 rounded-lg">
@@ -25,11 +23,11 @@ export default function Tracks({}: Props) {
             className="rounded bg-white"
           />
           <div className="flex flex-col gap-2">
-            <h3 className="text-xl font-bold ">Learn The Latest Skills</h3>
+            <h3 className="text-xl font-bold ">Build Your Foundation</h3>
             <p className="text-xs text-slate-600 max-w-xs dark:text-white">
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a BC, making it over 2000 years old. It has roots
-              in a BC, making it over 2000 years old.
+              Make your foundation strong by learning HTML, CSS, JS, Git, and
+              GitHub. Join this batch if you want to make your foundation as
+              strong as concrete.
             </p>
           </div>
           <Link
@@ -50,9 +48,8 @@ export default function Tracks({}: Props) {
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold ">Build Projects</h3>
             <p className="text-xs text-slate-600 max-w-xs dark:text-white">
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a BC, making it over 2000 years old. It has roots
-              in a BC, making it over 2000 years old.
+              Build the project with the latest technologies like React, Redux,
+              and Next.js. Join this batch if you want to be a part of it.
             </p>
           </div>
           <Link
@@ -73,9 +70,8 @@ export default function Tracks({}: Props) {
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold ">Get Hired</h3>
             <p className="text-xs text-slate-600 max-w-xs dark:text-white">
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a BC, making it over 2000 years old. It has roots
-              in a BC, making it over 2000 years old.
+              Enroll for this batch to ace interviews with tips, tricks, and
+              mock sessions, enhancing your skills for job success.
             </p>
           </div>
           <Link

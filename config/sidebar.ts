@@ -12,92 +12,94 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
-      title: "Learn",
+      title: "Learn Batch",
       items: [
         {
-          title: "Html",
+          title: "HTML",
           items: [
             {
-              title: "baisc",
+              title: "Crash Course",
               href: "/batch/learn/html/basic",
             },
           ],
         },
+        
         {
-          title: "Javascript",
+          title: "CSS",
           items: [
             {
-              title: "basic",
-              href: "/batch/learn/js/intro",
+              title: "Basic Introduction",
+              href: "/batch/learn/css/basic",
             },
             {
-              title: "DOM",
-              href: "/batch/learn/js/dom",
+              title: "Flex Crash Course",
+              href: "/batch/learn/css/flex",
             },
             {
-              title: "Google Keep",
-              href: "/batch/learn/js/google-keep",
-            },
-            {
-              title: "Wack a mole",
-              href: "/batch/learn/js/wack-a-mole",
-            },
-            {
-              title: "Github Wrapper",
-              href: "/batch/learn/js/github-wrapper",
+              title: "Grid Crash Course",
+              href: "/batch/learn/css/grid",
             },
           ],
-        },
+        }
+        ,
         {
-          title: "Git/Github",
+          title: "Git & Github",
           items: [
             {
-              title: "basic",
+              title: "Crash Course",
               href: "/batch/learn/github/intro",
             },
           ],
         },
         {
-          title: "CSS",
+          title: "JavaScript",
           items: [
             {
-              title: "basic",
-              href: "/batch/learn/css/basic",
+              title: "Basic Introduction",
+              href: "/batch/learn/js/intro",
             },
             {
-              title: "Flex",
-              href: "/batch/learn/css/flex",
+              title: "DOM Manipulation",
+              href: "/batch/learn/js/dom",
             },
             {
-              title: "Grid",
-              href: "/batch/learn/css/grid",
+              title: "Google Keep Clone",
+              href: "/batch/learn/js/google-keep",
+            },
+            {
+              title: "Wack a Mole Game",
+              href: "/batch/learn/js/wack-a-mole",
+            },
+            {
+              title: "Async JavaScript",
+              href: "/batch/learn/js/github-wrapper",
             },
           ],
-        },
+        }
       ],
     },
     {
-      title: "Build",
+      title: "Build Batch",
       items: [
         {
-          title: "React js",
+          title: "React JS",
           items: [
             {
               title: "Fundamentals",
               href: "/batch/build/react/fundamentals",
             },
             {
-              title: "Todo App",
+              title: "Build Todo App",
               href: "/batch/build/react/todo",
             },
             {
-              title: "Quiz App",
+              title: "Build Quiz App",
               href: "/batch/build/react/quiz",
             },
           ],
         },
         {
-          title: "Interview Qs",
+          title: "Interview Questions",
           items: [
             {
               title: "Tabs",
@@ -129,7 +131,7 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
-      title: "Hired",
+      title: "Hire Batch",
       items: [
         {
           title: "Profile and Resume",
@@ -140,15 +142,15 @@ export const docsConfig: DocsConfig = {
   ],
   mainNav: [
     {
-      title: "about",
+      title: "Learn",
       href: "/",
     },
     {
-      title: "join",
+      title: "Build",
       href: "/batch",
     },
     {
-      title: "docs",
+      title: "Hire",
       href: "/docs",
     },
   ],
