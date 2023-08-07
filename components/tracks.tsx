@@ -27,7 +27,7 @@ export default function Tracks({}: Props) {
             <p className="text-xs text-slate-600 max-w-xs dark:text-white">
               Make your foundation strong by learning HTML, CSS, JS, Git, and
               GitHub. Join this batch if you want to make your foundation as
-              strong as concrete."
+              strong as concrete.
             </p>
           </div>
           <Link
