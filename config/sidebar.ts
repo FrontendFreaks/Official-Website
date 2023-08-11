@@ -143,15 +143,15 @@ export const docsConfig: DocsConfig = {
   mainNav: [
     {
       title: "Learn",
-      href: "/",
+      href: "/batch/learn/html/basic",
     },
     {
       title: "Build",
-      href: "/batch",
+      href: "/batch/build/react/fundamentals",
     },
     {
       title: "Hire",
-      href: "/docs",
+      href:  "/batch/hire/hire",
     },
   ],
 };
