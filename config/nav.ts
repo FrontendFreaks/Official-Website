@@ -3,15 +3,15 @@ import { NavItem } from "@/types";
 export const navConfig: NavItem[] = [
   {
     title: "Learn",
-    href: "/",
+    href: "/batch/learn/html/basic",
   },
   {
     title: "Build",
-    href: "/",
+    href: "/batch/build/react/fundamentals",
   },
   {
     title: "Hire",
-    href: "#features",
+    href: "/batch/hire/hire",
   },
   
 ];

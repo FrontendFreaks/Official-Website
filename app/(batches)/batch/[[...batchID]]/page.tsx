@@ -42,11 +42,7 @@ export default async function page({ params }: Props) {
         <Mdx code={batch.body.code} />
         <hr className="my-4 md:my-6" />
       </div>
-      <div className="hidden text-sm xl:block">
-        <div className="sticky top-16 -mt-10 max-h-[calc(var(--vh)-4rem)] overflow-y-auto pt-10">
-          table of contents
-        </div>
-      </div>
+      <div className="hidden text-sm xl:block"></div>
     </main>
   );
 }

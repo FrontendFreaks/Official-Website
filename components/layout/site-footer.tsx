@@ -11,16 +11,22 @@ export default function SiteFooter({}: Props) {
           <a href="/" className=" hover:text-gray-900 mr-4">
             Home
           </a>
-          <a href="/about" className="hover:text-gray-900 mr-4">
+          <a
+            href="/batch/learn/html/basic"
+            className="hover:text-gray-900 mr-4"
+          >
             Learn
           </a>
           <a href="https://discord.com/invite/vee94km4Wh" target="_blank">
             <Button className="rounded-full">Mentorship</Button>
           </a>
-          <a href="/features" className="hover:text-gray-900 mr-4 ml-4">
+          <a
+            href="/batch/build/react/fundamentals"
+            className="hover:text-gray-900 mr-4 ml-4"
+          >
             Build
           </a>
-          <a href="/join" className="hover:text-gray-900 mr-4">
+          <a href="/batch/hire/hire" className="hover:text-gray-900 mr-4">
             Hire
           </a>
         </div>
