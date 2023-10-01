@@ -24,7 +24,7 @@ export default function Tracks({}: Props) {
           />
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold ">Build Your Foundation</h3>
-            <p className="text-xs text-slate-600 max-w-xs dark:text-white">
+            <p className="text-md text-slate-600 max-w-md dark:text-white">
               Make your foundation strong by learning HTML, CSS, JS, Git, and
               GitHub. Join this batch if you want to make your foundation as
               strong as concrete.
@@ -47,7 +47,7 @@ export default function Tracks({}: Props) {
           />
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold ">Build Projects</h3>
-            <p className="text-xs text-slate-600 max-w-xs dark:text-white">
+            <p className="text-md text-slate-600 max-w-md dark:text-white">
               Build the project with the latest technologies like React, Redux,
               and Next.js. Join this batch if you want to be a part of it.
             </p>
@@ -69,7 +69,7 @@ export default function Tracks({}: Props) {
           />
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold ">Get Hired</h3>
-            <p className="text-xs text-slate-600 max-w-xs dark:text-white">
+            <p className="text-md text-slate-600 max-w-md dark:text-white">
               Enroll for this batch to ace interviews with tips, tricks, and
               mock sessions, enhancing your skills for job success.
             </p>
