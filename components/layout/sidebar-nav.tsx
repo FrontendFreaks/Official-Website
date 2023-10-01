@@ -22,36 +22,49 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
   return items.length ? (
     <div className="w-full text-slate-800 ">
       {items.map((item, index) => (
-        <div key={index} className={cn("pb-8")}>
-          <h4 className="mb-1 rounded-md py-1 text-base font-medium dark:text-white">
-            {item.title}
-          </h4>
-          {item.items ? (
-            <div className="dark:text-gray-400">
-              {item.items.map((item) => (
-                <>
-                  {item.href ? (
-                    <DocsSidebarNavItem item={item} pathname={pathname} />
-                  ) : (
-                    <Accordion type="single" collapsible>
-                      <AccordionItem className="border-b-0" value="item-1">
-                        <div>
-                        
-                          <AccordionTrigger className="py-2 hover:no-underline"> {item.title}</AccordionTrigger>
-                        </div>
-                        <AccordionContent className="pb-[-1rem]">
-                          <DocsSidebarNavItems
-                            items={item.items}
-                            pathname={pathname}
-                          />
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
-                  )}
-                </>
-              ))}
-            </div>
-          ) : null}
+        <div key={index} className={cn("pb-4")}>
+          <Accordion type="single" collapsible>
+            <AccordionItem className="border-b-0" value="item-title">
+              <div>
+                <AccordionTrigger className="py-2 hover:no-underline">
+                  {item.title}
+                </AccordionTrigger>
+              </div>
+              <AccordionContent>
+                {item.items ? (
+                  <div className="dark:text-gray-400">
+                    {item.items.map(item => (
+                      <>
+                        {item.href ? (
+                          <DocsSidebarNavItem item={item} pathname={pathname} />
+                        ) : (
+                          <Accordion type="single" collapsible>
+                            <AccordionItem
+                              className="border-b-0"
+                              value="item-1"
+                            >
+                              <div>
+                                <AccordionTrigger className="py-2 hover:no-underline">
+                                  {" "}
+                                  {item.title}
+                                </AccordionTrigger>
+                              </div>
+                              <AccordionContent className="pb-[-1rem]">
+                                <DocsSidebarNavItems
+                                  items={item.items}
+                                  pathname={pathname}
+                                />
+                              </AccordionContent>
+                            </AccordionItem>
+                          </Accordion>
+                        )}
+                      </>
+                    ))}
+                  </div>
+                ) : null}
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       ))}
     </div>
