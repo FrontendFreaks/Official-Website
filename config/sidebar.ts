@@ -75,6 +75,15 @@ export const docsConfig: DocsConfig = {
               href: "/batch/learn/js/github-wrapper",
             },
           ],
+        },
+        {
+          title: "Data Structure & Algorithms in JS",
+          items: [
+            {
+              title: "Array in JS",
+              href: "/batch/learn/dsa/array-in-js",
+            }, 
+          ],
         }
       ],
     },
