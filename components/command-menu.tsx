@@ -46,7 +46,7 @@ export function CommandMenu() {
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
-      <PopoverTrigger asChild>
+      {/* <PopoverTrigger asChild>
         <Button
           variant="outline"
           role="combobox"
@@ -62,7 +62,7 @@ export function CommandMenu() {
             <span className="text-xs">⌘</span>K
           </kbd>
         </Button>
-      </PopoverTrigger>
+      </PopoverTrigger> */}
       <PopoverContent className="w-[200px] p-0">
         <Command>
           <CommandInput placeholder="Search framework..." />
