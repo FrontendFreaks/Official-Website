@@ -20,6 +20,7 @@ The Frontend Freaks website is built using the following technologies:
 
 - [NEXT.js](https://nextjs.org/): A popular React framework for building fast, modern web applications.
 - [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework that helps you quickly design and style your web components.
+- [ContentLayer](https://contentlayer.dev/): A content management system (CMS) or data layer used to manage dynamic content and data-driven pages on the website.
 - [Node.js](https://nodejs.org/): A JavaScript runtime for server-side development.
 - [npm](https://www.npmjs.com/): The package manager for JavaScript that manages project dependencies.
 
