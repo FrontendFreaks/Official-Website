@@ -80,7 +80,7 @@ We welcome contributions from the community to improve the Frontend Freaks websi
 3. Make your changes, and ensure that the code passes any tests.
 4. Commit your changes: `git commit -m "Add your commit message"`
 5. Push your changes to your fork: `git push origin feature/your-feature-name`
-6. Create a pull request to the `main` branch of this repository.
+6. Create a pull request to the `master` branch of this repository.
 
 ---
 
