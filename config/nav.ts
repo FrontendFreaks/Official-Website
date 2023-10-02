@@ -13,5 +13,8 @@ export const navConfig: NavItem[] = [
     title: "Hire",
     href: "/batch/hire/hire",
   },
-  
+  {
+    title: "Docs",
+    href: "https://frontendfreaks.vercel.app/docs",
+  },
 ];
