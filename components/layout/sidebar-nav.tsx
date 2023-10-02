@@ -35,11 +35,9 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
                   ) : (
                     <Accordion type="single" collapsible>
                       <AccordionItem className="border-b-0" value="item-1">
-                        <div className="flex justify-between items-center">
-                          <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-medium">
-                            {item.title}
-                          </h4>
-                          <AccordionTrigger className="py-2"></AccordionTrigger>
+                        <div>
+                        
+                          <AccordionTrigger className="py-2 hover:no-underline"> {item.title}</AccordionTrigger>
                         </div>
                         <AccordionContent className="pb-[-1rem]">
                           <DocsSidebarNavItems
