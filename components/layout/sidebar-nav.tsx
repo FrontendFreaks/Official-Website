@@ -1,23 +1,23 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 
-import { cn } from "@/lib/utils";
-import { NavItem, SidebarNav, SidebarNavItem } from "@/types";
+import { cn } from "@/lib/utils"
+import { NavItem, SidebarNav, SidebarNavItem } from "@/types"
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../ui/accordion";
+} from "../ui/accordion"
 
 export interface DocsSidebarNavProps {
-  items: SidebarNav[];
+  items: SidebarNav[]
 }
 
 export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
   return items.length ? (
     <div className="w-full text-slate-800 ">
@@ -26,7 +26,7 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
           <Accordion type="single" collapsible>
             <AccordionItem className="border-b-0" value="item-title">
               <div>
-                <AccordionTrigger className="py-2 hover:no-underline">
+                <AccordionTrigger className="mb-1 rounded-md py-1 text-base font-medium dark:text-white hover:no-underline">
                   {item.title}
                 </AccordionTrigger>
               </div>
@@ -68,12 +68,12 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
         </div>
       ))}
     </div>
-  ) : null;
+  ) : null
 }
 
 interface DocsSidebarNavItemsProps {
-  items: NavItem[] | undefined;
-  pathname: string | null;
+  items: NavItem[] | undefined
+  pathname: string | null
 }
 
 export function DocsSidebarNavItems({
@@ -85,15 +85,15 @@ export function DocsSidebarNavItems({
       {items.map((item, index) => {
         return (
           <DocsSidebarNavItem key={index} item={item} pathname={pathname} />
-        );
+        )
       })}
     </div>
-  ) : null;
+  ) : null
 }
 
 interface DocsSidebarNavItemsrops {
-  item: NavItem | SidebarNavItem;
-  pathname: string | null;
+  item: NavItem | SidebarNavItem
+  pathname: string | null
 }
 
 export function DocsSidebarNavItem({
@@ -113,5 +113,5 @@ export function DocsSidebarNavItem({
     <span className="flex w-full cursor-not-allowed items-center rounded-md p-2 opacity-60">
       {item.title}
     </span>
-  );
+  )
 }
