@@ -78,6 +78,63 @@ export const docsConfig: DocsConfig = {
         }
       ],
     },
+
+    {
+      title:"DSA in Javascript",
+      items: [
+        {
+          title: "Loops",
+          href: "/batch/dsa/loops",
+        },
+        {
+          title: "Time Complexity",
+          href: "/batch/dsa/time-complexity",
+        },
+        {
+          title: "Array",
+          href: "/batch/dsa/array",
+        },
+        {
+          title: "Polyfills",
+          href: "/batch/dsa/polyfills",
+        },
+        {
+          title: "String",
+          href: "/batch/dsa/string",
+        },
+        {
+          title: "Recursion",
+          href: "/batch/dsa/recursion",
+        },
+        {
+          title: "Linear & Binary Search",
+          href: "/batch/dsa/search",
+        },
+        {
+          title: "Objects",
+          href: "/batch/dsa/objects",
+        },
+        {
+          title: "Sorting",
+          href: "/batch/dsa/sorting",
+        },
+        {
+          title: "Set and Map",
+          href: "/batch/dsa/set-map",
+        },{
+          title: "Linked List",
+          href: "/batch/dsa/linked-list",
+        },
+        {
+          title: "Stack",
+          href: "/batch/dsa/stack",
+        },
+        {
+          title: "Queue",
+          href: "/batch/dsa/queue",
+        },
+      ],
+    },
     {
       title: "Build Batch",
       items: [
