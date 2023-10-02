@@ -115,8 +115,12 @@ export const docsConfig: DocsConfig = {
           href: "/batch/dsa/objects",
         },
         {
-          title: "Sorting",
-          href: "/batch/dsa/sorting",
+          title: "Basic Sorting",
+          href: "/batch/dsa/basic-sorting",
+        },
+        {
+          title: "Advance Sorting",
+          href: "/batch/dsa/advance-sorting",
         },
         {
           title: "Set and Map",
