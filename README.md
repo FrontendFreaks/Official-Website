@@ -83,6 +83,11 @@ We welcome contributions from the community to improve the Frontend Freaks websi
 5. Push your changes to your fork: `git push origin feature/your-feature-name`
 6. Create a pull request to the `master` branch of this repository.
 
+## Wall of Contributors
+<a href="https://github.com/FrontendFreaks/Official-Website/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=FrontendFreaks/Official-Website" />
+</a>
+
 ---
 
 Thank you for visiting the Frontend Freaks official repository. We hope you find our website valuable and enjoy learning and improving your frontend development skills with us! If you have any questions or suggestions, please feel free to open an issue or reach out to us. Happy coding!
