@@ -214,5 +214,9 @@ export const docsConfig: DocsConfig = {
       title: "Hire",
       href:  "/batch/hire/hire",
     },
+    {
+      title: "Docs",
+      href: "https://frontendfreaks.vercel.app/docs",
+    },
   ],
 };
