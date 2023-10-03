@@ -5,6 +5,7 @@ import { useMDXComponent } from "next-contentlayer/hooks";
 
 import { cn } from "@/lib/utils";
 import { Callout } from "./callout";
+import CodeEditor from "../code-editor";
 import { MdxCard } from "./mdx-card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "../ui/tabs";
 import VideoPlayer from "../video-player";
@@ -153,6 +154,7 @@ const components = {
   ),
   Image,
   Callout,
+  CodeEditor,
   Card: MdxCard,
   VideoPlayer,
   HeadingWithLink,
