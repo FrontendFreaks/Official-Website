@@ -76,15 +76,6 @@ export const docsConfig: DocsConfig = {
             },
           ],
         },
-        {
-          title: "Data Structure & Algorithms in JS",
-          items: [
-            {
-              title: "Array in JS",
-              href: "/batch/learn/dsa/array-in-js",
-            }, 
-          ],
-        }
       ],
     },
 
