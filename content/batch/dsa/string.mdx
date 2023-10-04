@@ -1,9 +1,209 @@
 ---
-title: String
-description: Learn String in JavaScript
+title: Strings
+description: Learn Strings in JavaScript
 ---
 
 <Callout>
-
-Want to improve this page?. Raise a issue on [@github](https://github.com/FrontendFreaks/Official-Website).
+Want to improve this page? Raise an issue on [@github](https://github.com/FrontendFreaks/Official-Website).
 </Callout>
+## What's on this section?
+
+In this section, you will:
+
+- 🎨 Explore different string manipulation techniques in JavaScript.
+- 🔍 Understand the various string methods and their usage.
+- 💡 Learn about template literals and string interpolation.
+- 🚀 Practice your knowledge through assignments related to string manipulation.
+
+<Tabs defaultValue="learn">
+
+<TabsList>
+  <TabsTrigger value="learn">Learn</TabsTrigger>
+  <TabsTrigger value="assignment">Assignment</TabsTrigger>
+</TabsList>
+
+<TabsContent value="learn">
+
+### Explore Different String Manipulation Techniques
+
+In this section, you will delve into various string manipulation techniques in JavaScript, including:
+
+- **String Methods**: Learn how to use various string methods for tasks like extracting, modifying, and searching for text within strings.
+- **Template Literals**: Explore the power of template literals for creating dynamic strings with embedded expressions.
+- **String Concatenation**: Understand how to concatenate strings using different methods.
+- **String Interpolation**: Discover how to insert variables or expressions into strings effectively.
+
+
+## 📺 Watch Now
+
+<div className="w-full h-full">
+  <a href="https://www.youtube.com/watch?v=Unc365YFdf4" >
+    <img className="w-full h-full object-cover" src="https://camo.githubusercontent.com/266a84400260b3b6aa0d97332a19d301ee8f767d229083dfd58931781efea309/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f556e6333363559466466342f302e6a7067" alt="JavaScript Loops" />
+  </a>
+</div>
+
+## 📝 Study Notes
+
+# String In JavaScript
+
+
+### Length of a String
+```javascript
+let firstName = "Vaishali";
+console.log(firstName.length);
+```
+
+### Access String Element
+```javascript
+console.log(firstName.charAt(2)); // i
+console.log(firstName[2]); // i
+console.log(firstName.charCodeAt(2)); // 115 (Ascii Code)
+```
+
+### Check Presence of Character
+```javascript
+console.log(firstName.includes("r")); // false (& if present it return true)
+console.log(firstName.indexOf("i")); // 2 (& if not present it return -1)
+console.log(firstName.lastIndexOf("i")); // 7 
+```
+
+### Compare Two Strings
+```javascript
+let anotherName = "Vishal";
+console.log(firstName.localeCompare(anotherName)); // -1 (& if strings are equal it return 0)
+```
+
+### Replace Substring
+```javascript
+const str = "Vishal is Best Frontend Developer. Vishal is Best Developer. ";
+console.log(str.replace("Vishal", "Sujit")); // "Sujit is Best Frontend Developer. Vishal is Best Developer. "
+console.log(str.replaceAll("Vishal", "Sujit")); // "Sujit is Best Frontend Developer. Sujit is Best Developer. "
+```
+
+### Substring of a String
+```javascript
+console.log(str.substring(6, 30)); 
+console.log(str.slice(-10, -1));
+```
+
+### Split and Join
+```javascript
+console.log(str.split(""));
+const subString = str.split(" ");
+console.log(subString.join(" "));
+```
+
+### String Start and End
+```javascript
+console.log(str.startsWith("Vishal")); // true
+console.log(str.endsWith("Developer")); // true
+```
+
+### Trim and Case Conversion
+```javascript
+const trimStr = str.trim();
+const trimStrStart = str.trimStart();
+const trimStrEnd = str.trimEnd();
+console.log(trimStr, trimStr.length);
+console.log(str.toLowerCase());
+console.log(str.toUpperCase());
+```
+
+### Convert Number and Object to String
+```javascript
+const num = 123;
+console.log(num, num.toString());
+
+const obj = {
+    name: "Vishal",
+    course: "DSA with Vishal"
+};
+console.log(obj, JSON.stringify(obj));
+```
+
+### Concatenate Strings
+```javascript
+const lastName = "Rajput";
+console.log(firstName + lastName);
+console.log(`${firstName} ${lastName} is a Best Developer`);
+console.log(firstName.concat(lastName, " is a", " Best"));
+```
+
+## Practice Questions
+
+- [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
+- [Reverse String](https://leetcode.com/problems/reverse-string)
+- [Valid Anagram](https://leetcode.com/problems/valid-anagram)
+- [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)
+- [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately)
+- [Length of Last Word](https://leetcode.com/problems/length-of-last-word/)
+- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome)
+- [String Compression](https://leetcode.com/problems/string-compression)
+- [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)
+- [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string)
+- [Rotate String](https://leetcode.com/problems/rotate-string)
+ 
+
+
+</TabsContent>
+
+<TabsContent value="assignment">
+    
+    ### 📌🔨 Task
+
+    - Practice your string manipulation skills by solving the following problems.
+    - Use JavaScript to manipulate strings, extract information, and transform text.
+
+    ### ❓Unclear with concepts? 📺 Watch This
+    <div key="stringVideo" align="center">
+        <a href="https://www.youtube.com/live/Unc365YFdf4" >
+            <img  src="https://camo.githubusercontent.com/266a84400260b3b6aa0d97332a19d301ee8f767d229083dfd58931781efea309/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f556e6333363559466466342f302e6a7067" alt="String Manipulation in JavaScript" />
+        </a>
+    </div>
+
+    <Callout type="info">
+        ### ⚒️ Assignments for Practice
+
+        👨‍💻📝 Now that you have reviewed the string manipulation concepts, it's time to put your knowledge into practice by completing the string manipulation assignments. 🚀
+    </Callout>
+
+    <HeadingWithLink link="#" emoji="📅" text="1. Reverse a String" />
+
+    Write a JavaScript function that reverses a given string. For example, if the input is "hello," the function should return "olleh."
+
+    <HeadingWithLink link="#" emoji="📜" text="2. Count Vowels" />
+
+    Implement a function that counts the number of vowels (a, e, i, o, u) in a given string. Ignore case sensitivity. For example, for the input "Hello World," the function should return 3.
+
+    <HeadingWithLink link="#" emoji="✅" text="3. Palindrome Checker" />
+
+    Create a function that checks if a given string is a palindrome. A palindrome is a word, phrase, or sequence of characters that reads the same backward as forward. For example, "racecar" is a palindrome.
+
+    <HeadingWithLink link="#" emoji="🔍" text="4. Find Longest Word" />
+
+    Write a function that finds the longest word in a sentence or string. For example, for the input "The quick brown fox jumped over the lazy dog," the function should return "jumped."
+
+    <HeadingWithLink link="#" emoji="📊" text="5. Title Case a Sentence" />
+
+    Implement a function that converts a sentence to title case, where the first letter of each word is capitalized. For example, for the input "hello world," the function should return "Hello World."
+
+    <HeadingWithLink link="#" emoji="🔗" text="6. URL Slug" />
+
+    Create a function that generates a URL slug from a given string. A URL slug is a URL-friendly version of a string, typically used in URLs. For example, for the input "Learn JavaScript Basics," the function should return "learn-javascript-basics."
+
+    <Callout type="info">
+
+    ### 📣 Done Solving?
+    🎉 Congratulations on completing the string manipulation assignments! Share your solutions and showcase your skills. Connect with other developers and get feedback on your work.
+    </Callout>
+
+    👏 Great job mastering string manipulation in JavaScript! 🎉👨‍💻📝
+
+    Now, you can continue your journey by exploring more advanced JavaScript topics or moving on to other aspects of web development. Keep coding and learning! 💪🚀
+
+</TabsContent>
+
+
+</Tabs>
+
+
