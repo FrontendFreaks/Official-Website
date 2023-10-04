@@ -12,13 +12,12 @@ interface BatchRootLayoutProps {
 
 const CourseRootLayout = ({ children }: BatchRootLayoutProps) => {
   return (
-    <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-40 w-full border-b bg-background">
-        <div className="container flex h-16 items-center space-x-4 justify-between sm:space-x-0">
-          <MainNav items={docsConfig.mainNav}>
+    <div className="flex min-h-screen flex-col" style={{border:'2px solid red'}}>
+      <header className="sticky top-0 z-40 w-full border-b bg-background" >
+        <div className="container flex h-16 items-center space-x-4 justify-between sm:space-x-0" >
+          <MainNav items={docsConfig.mainNav} >
             <DocSideNav items={DocumentationConfig} />
           </MainNav>
-
           <div className="flex md:flex-1 items-center space-x-4 sm:justify-end">
             <nav className="flex space-x-4 items-center">
               <div className=" px-3 hidden md:flex">
@@ -30,9 +29,11 @@ const CourseRootLayout = ({ children }: BatchRootLayoutProps) => {
               </Link>
             </nav>
           </div>
+         
         </div>
       </header>
-      <div className="container flex-1">{children}</div>
+      <div className="container flex-1" >{children}</div>
+      
     </div>
   );
 };

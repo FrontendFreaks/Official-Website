@@ -13,7 +13,7 @@ export const DocsHeader = ({
 }: DocsHeaderProps) => {
   return (
     <>
-      <div className={cn("space-y-3", className)} {...props}>
+      <div className={cn("space-y-3", className)} {...props} >
         <h1 className="text-2xl font-bold text-foreground leading-[1.1] tracking-tighter sm:text-3xl md:text-5xl">
           {title}
         </h1>

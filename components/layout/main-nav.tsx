@@ -26,7 +26,7 @@ export default function MainNav({ items, children }: MainNavProps) {
       </Link>
 
       {items?.length ? (
-        <div className="flex gap-6">
+        <div className="flex gap-6" >
           <nav className="hidden md:flex gap-6">
             {items?.map((item, index) => {
               return (
@@ -54,6 +54,7 @@ export default function MainNav({ items, children }: MainNavProps) {
       {showMobileMenu && items && (
         <MobileNav items={items}>{children}</MobileNav>
       )}
+      
     </div>
   );
 }
