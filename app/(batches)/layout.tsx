@@ -5,7 +5,7 @@ import { DocsSidebarNav } from "@/components/layout/sidebar-nav";
 import { navConfig } from "@/config/nav";
 import { docsConfig } from "@/config/sidebar";
 import Link from "next/link";
-import SiteFooter from "@/components/layout/site-footer"
+import SiteFooter from "@/components/layout/site-footer";
 
 interface BatchRootLayoutProps {
   children: React.ReactNode;
@@ -34,6 +34,7 @@ const CourseRootLayout = ({ children }: BatchRootLayoutProps) => {
         </div>
       </header>
       <div className="container flex-1">{children}</div>
+
       <SiteFooter />
     </div>
   );
