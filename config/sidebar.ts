@@ -75,7 +75,7 @@ export const docsConfig: DocsConfig = {
               href: "/batch/learn/js/github-wrapper",
             },
           ],
-        }
+        },
       ],
     },
 
