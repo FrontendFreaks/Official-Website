@@ -2,7 +2,6 @@ import { CommandMenu } from "@/components/command-menu";
 import { Icons } from "@/components/icons";
 import MainNav from "@/components/layout/main-nav";
 import { DocsSidebarNav } from "@/components/layout/sidebar-nav";
-import { navConfig } from "@/config/nav";
 import { docsConfig } from "@/config/sidebar";
 import Link from "next/link";
 
@@ -24,7 +23,11 @@ const CourseRootLayout = ({ children }: BatchRootLayoutProps) => {
               <div className=" px-3 hidden md:flex">
                 <CommandMenu />
               </div>
-              <Link href="https://github.com/FrontendFreaks" target="_blank" rel="noreferrer">
+              <Link
+                href="https://github.com/FrontendFreaks"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Icons.gitHub className="h-7 w-7" />
                 <span className="sr-only">GitHub</span>
               </Link>
