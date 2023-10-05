@@ -1,8 +1,6 @@
 "use client";
 import { Check } from "lucide-react";
-
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 import {
   Command,
   CommandEmpty,
@@ -13,7 +11,7 @@ import {
 import {
   Popover,
   PopoverContent,
-  PopoverTrigger,
+  // PopoverTrigger,
 } from "@/components/ui/popover";
 import { useState } from "react";
 

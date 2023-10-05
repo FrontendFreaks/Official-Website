@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
 import { cn } from "@/lib/utils";
 import { NavItem, SidebarNavItem, documentationConfig } from "@/types";
 
@@ -23,7 +22,7 @@ export function DocSideNav({ items }: DocsSidebarNavProps) {
           <div className="dark:text-gray-400">
             {item.items ? (
               <DocsSidebarNavItems items={item.items} pathname={pathname} />
-              ) : null}
+            ) : null}
           </div>
         </div>
       ))}

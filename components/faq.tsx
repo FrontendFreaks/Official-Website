@@ -15,7 +15,6 @@ export function Faq() {
       <div className="grid md:gap-20 md:grid-cols-2 grid-cols-1">
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
-
             <AccordionTrigger className="text-left">
               What is Frontend Freaks?
             </AccordionTrigger>
@@ -28,9 +27,7 @@ export function Faq() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-
             <AccordionTrigger className="text-left">
-
               What is Frontend Developer Mentorship?
             </AccordionTrigger>
             <AccordionContent>
@@ -41,9 +38,7 @@ export function Faq() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-
             <AccordionTrigger className="text-left">
-
               Is Frontend Developer Mentorship paid?
             </AccordionTrigger>
             <AccordionContent>
@@ -55,7 +50,6 @@ export function Faq() {
         </Accordion>
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
-
             <AccordionTrigger className="text-left">
               When can I join?
             </AccordionTrigger>
@@ -66,9 +60,7 @@ export function Faq() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-
             <AccordionTrigger className="text-left">
-
               What types of mentorship do you provide?
             </AccordionTrigger>
             <AccordionContent>
@@ -81,7 +73,6 @@ export function Faq() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-
             <AccordionTrigger className="text-left">
               Not sure which batch to join?
             </AccordionTrigger>
