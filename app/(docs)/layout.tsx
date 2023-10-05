@@ -25,6 +25,7 @@ const CourseRootLayout = ({ children }: BatchRootLayoutProps) => {
               <div className=" px-3 hidden md:flex">
                 <CommandMenu />
               </div>
+              <ModeToggle/>
               <Link href="https://github.com/FrontendFreaks" target="_blank" rel="noreferrer">
                 <Icons.gitHub className="h-7 w-7" />
                 <span className="sr-only">GitHub</span>
