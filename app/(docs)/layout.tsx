@@ -3,6 +3,7 @@ import { Icons } from "@/components/icons";
 import { DocSideNav } from "@/components/layout/docs-nav";
 import MainNav from "@/components/layout/main-nav";
 import { ModeToggle } from "@/components/mode-toggle";
+import { navConfig } from "@/config/nav";
 import { DocumentationConfig } from "@/config/docs";
 import { docsConfig } from "@/config/sidebar";
 import Link from "next/link";
@@ -16,7 +17,7 @@ const CourseRootLayout = ({ children }: BatchRootLayoutProps) => {
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-40 w-full border-b bg-background">
         <div className="container flex h-16 items-center space-x-4 justify-between sm:space-x-0">
-          <MainNav items={docsConfig.mainNav}>
+          <MainNav items={navConfig}>
             <DocSideNav items={DocumentationConfig} />
           </MainNav>
 
