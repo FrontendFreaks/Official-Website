@@ -33,8 +33,8 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
               <AccordionContent>
                 {item.items ? (
                   <div className="dark:text-gray-400">
-                    {item.items.map(item => (
-                      <>
+                    {item.items.map((item,index) => (
+                      <div key={index}>
                         {item.href ? (
                           <DocsSidebarNavItem item={item} pathname={pathname} />
                         ) : (
@@ -58,7 +58,7 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
                             </AccordionItem>
                           </Accordion>
                         )}
-                      </>
+                      </div>
                     ))}
                   </div>
                 ) : null}

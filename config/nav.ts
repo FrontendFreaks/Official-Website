@@ -16,5 +16,5 @@ export const navConfig: NavItem[] = [
   {
     title: "Docs",
     href: "/docs",
-  }
+  },
 ];
