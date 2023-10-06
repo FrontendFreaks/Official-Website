@@ -39,6 +39,28 @@ export default function Tracks({}: Props) {
         </div>
         <div className="flex flex-col gap-3 items-center border p-4 rounded-lg">
           <Image
+            src="/dsa_in_javascript.svg"
+            alt="learn"
+            width={250}
+            height={250}
+            className="rounded bg-white"
+          />
+          <div className="flex flex-col gap-2">
+            <h3 className="text-xl font-bold ">DSA In Javascript</h3>
+            <p className="text-xs text-slate-600 max-w-xs dark:text-white">
+              Enroll for this batch to ace DSA skills with javascript, enhancing
+              your skills for job success.
+            </p>
+          </div>
+          <Link
+            href="/batch/dsa/loops"
+            className={cn(buttonVariants(), "rounded-full px-8 py-2 mt-4")}
+          >
+            Join
+          </Link>
+        </div>
+        <div className="flex flex-col gap-3 items-center border p-4 rounded-lg">
+          <Image
             src="/build_img.svg"
             alt="learn"
             width={250}
