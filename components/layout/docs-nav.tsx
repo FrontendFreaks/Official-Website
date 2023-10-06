@@ -41,7 +41,7 @@ export function DocsSidebarNavItems({
   pathname,
 }: DocsSidebarNavItemsProps) {
   return items?.length ? (
-    <div className="grid grid-flow-row auto-rows-max text-sm" style={{border:"2px solid red"}}>
+    <div className="grid grid-flow-row auto-rows-max text-sm" >
       {items.map((item, index) => {
         return (
           <DocsSidebarNavItem key={index} item={item} pathname={pathname} />
