@@ -13,7 +13,9 @@ export default function SiteHeader({}: Props) {
         <MainNav items={navConfig} />
         <ModeToggle />
         <a href="https://discord.com/invite/vee94km4Wh" target="_blank">
-          <Button className="rounded-full">Mentorship</Button>
+          <Button className="hidden md:inline-block rounded-full">
+            Mentorship
+          </Button>
         </a>
       </div>
     </header>
