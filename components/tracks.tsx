@@ -47,7 +47,7 @@ export default function Tracks({}: Props) {
           />
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold ">DSA In Javascript</h3>
-            <p className="text-xs text-slate-600 max-w-xs dark:text-white">
+            <p className="text-md text-slate-600 max-w-md dark:text-white">
               Enroll for this batch to ace DSA skills with javascript, enhancing
               your skills for job success.
             </p>
