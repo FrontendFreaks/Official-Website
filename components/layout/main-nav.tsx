@@ -21,7 +21,7 @@ export default function MainNav({ items, children }: MainNavProps) {
     <div className="flex gap-6 md:gap-10 w-full">
       <Link href="/" className="hidden items-center space-x-2 md:flex">
         <span className="hidden text-lg font-bold sm:inline-block">
-          Frontend Freaks
+          Frontend Freaks 
         </span>
       </Link>
 
@@ -48,8 +48,8 @@ export default function MainNav({ items, children }: MainNavProps) {
         className="flex items-center space-x-2 md:hidden"
         onClick={() => setShowMobileMenu(!showMobileMenu)}
       >
-        {showMobileMenu ? <Icons.close /> : <Icons.logo />}
-        <span className="font-bold">Menu</span>
+        {showMobileMenu ? <Icons.close /> : <Icons.menu />}
+        <span className="font-bold">Frontend Freaks</span>
       </button>
       {showMobileMenu && items && (
         <MobileNav items={items}>{children}</MobileNav>
