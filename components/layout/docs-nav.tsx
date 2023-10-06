@@ -23,7 +23,7 @@ export function DocSideNav({ items }: DocsSidebarNavProps) {
           <div className="dark:text-gray-400">
             {item.items ? (
               <DocsSidebarNavItems items={item.items} pathname={pathname} />
-              ) : null}
+            ) : null}
           </div>
         </div>
       ))}
