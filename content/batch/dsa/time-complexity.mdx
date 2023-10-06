@@ -7,3 +7,122 @@ description: Learn Time Complexity in JavaScript
 
 Want to improve this page?. Raise a issue on [@github](https://github.com/FrontendFreaks/Official-Website).
 </Callout>
+
+# What's in this section?
+
+In this section, you will:
+
+- ⏳ Analyze time complexity in JavaScript code.
+- 🧠 Understand the concept of Big O notation and how it is used to express algorithmic performance.
+- 📈 Learn how to determine the time complexity of different algorithms and data structures.
+- 💻 Practice your knowledge through exercises and assignments related to time complexity analysis.
+
+<Tabs defaultValue="learn">
+
+<TabsList>
+  <TabsTrigger value="learn">Learn</TabsTrigger>
+  <TabsTrigger value="assignment">Assignment</TabsTrigger>
+</TabsList>
+
+<TabsContent value="learn">
+  <div className="w-full h-full">
+    <VideoPlayer src="https://youtu.be/I9BNxqZSShk"/>
+
+    <Callout type="info">
+      We hope that you found the tutorial video helpful in understanding the basic concepts of Time Complexity in javascript. You can refer to these notes 📝 for quick revision.
+    </Callout>
+
+    ## 📝 Study Notes
+
+    ### What is Time Complexity?
+Time complexity is a measure of the efficiency of an algorithm in terms of the amount of time it takes to execute relative to the size of the input. It is expressed using Big O notation, which describes the upper bound of an algorithm's running time.
+
+### Big O Notation
+Big O notation is a way to describe the efficiency of an algorithm. It represents the upper bound of an algorithm's running time in terms of the size of the input. The most common time complexities are O(1), O(log n), O(n), O(n log n), and O(n^2).
+
+### Constant Time Complexity - O(1)
+Constant time complexity means that the running time of the algorithm does not depend on the size of the input. The algorithm takes the same amount of time to execute regardless of the size of the input.
+
+```javascript
+function constantTimeFunction() {
+  console.log("This function has constant time complexity.");
+}
+```
+
+### Linear Time Complexity - O(n)
+Linear time complexity means that the running time of the algorithm is directly proportional to the size of the input. The algorithm takes longer to execute as the size of the input increases.
+
+```javascript
+function linearTimeFunction(n) {
+  for (let i = 0; i < n; i++) {
+    console.log("This function has linear time complexity.");
+  }
+}
+```
+
+### Quadratic Time Complexity - O(n^2)
+Quadratic time complexity means that the running time of the algorithm is proportional to the square of the size of the input. The algorithm takes much longer to execute as the size of the input increases.
+
+```javascript
+function quadraticTimeFunction(n) {
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      console.log("This function has quadratic time complexity.");
+    }
+  }
+}
+```
+
+### Logarithmic Time Complexity - O(log n)
+Logarithmic time complexity means that the running time of the algorithm grows logarithmically with the size of the input. The algorithm takes longer to execute, but the increase in time is slower than linear time complexity.
+
+```javascript
+function logarithmicTimeFunction(n) {
+  for (let i = 1; i < n; i *= 2) {
+    console.log("This function has logarithmic time complexity.");
+  }
+}
+```
+
+### Linearithmic Time Complexity - O(n log n)
+Linearithmic time complexity means that the running time of the algorithm is proportional to n log n. This is a common time complexity for algorithms that divide the input into smaller pieces and process each piece linearly.
+
+```javascript
+function linearithmicTimeFunction(n) {
+  if (n <= 1) return;
+  const mid = Math.floor(n / 2);
+  linearithmicTimeFunction(mid);
+  linearithmicTimeFunction(n - mid);
+  console.log("This function has linearithmic time complexity.");
+}
+```
+
+    ### Trade-offs
+    It's important to consider the trade-offs between time complexity and space complexity when designing algorithms. Sometimes, optimizing for one can result in a less optimal solution for the other.
+
+  </div>
+</TabsContent>
+
+
+<TabsContent value="assignment">
+## Practice Questions
+
+# Practice Questions for Time Complexity in JavaScript
+
+1. [Two Sum](https://leetcode.com/problems/two-sum/)
+2. [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+3. [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
+4. [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
+5. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+6. [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+7. [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+8. [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+9. [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
+10. [Find Peak Element](https://leetcode.com/problems/find-peak-element/)
+11. [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+
+ 
+</TabsContent>
+
+
+</Tabs>
