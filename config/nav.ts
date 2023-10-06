@@ -6,6 +6,10 @@ export const navConfig: NavItem[] = [
     href: "/batch/learn/html/basic",
   },
   {
+    title: "DSA IN JS",
+    href: "/batch/dsa/loops",
+  },
+  {
     title: "Build",
     href: "/batch/build/react/fundamentals",
   },
@@ -13,5 +17,4 @@ export const navConfig: NavItem[] = [
     title: "Hire",
     href: "/batch/hire/hire",
   },
-  
 ];
