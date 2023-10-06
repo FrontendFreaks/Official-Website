@@ -17,6 +17,7 @@ import {
   LogOut,
   LucideProps,
   Moon,
+  Menu,
   MoreVertical,
   Pizza,
   Plus,
@@ -41,6 +42,7 @@ export type Icon = LucideIcon;
 
 export const Icons = {
   logo: Anchor,
+  menu: Menu,
   logout: LogOut,
   link: Link,
   comment: MessageSquare,
