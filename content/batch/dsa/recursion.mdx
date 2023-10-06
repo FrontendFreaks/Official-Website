@@ -7,3 +7,93 @@ description: Learn Recursion in JavaScript
 
 Want to improve this page?. Raise a issue on [@github](https://github.com/FrontendFreaks/Official-Website).
 </Callout>
+
+# Recursion in JavaScript
+
+In this section, you will:
+
+- 🌀 Explore recursion in JavaScript and understand how it works.
+- 🔍 Delve into various recursion patterns and strategies.
+- 💡 Learn how to solve problems recursively.
+- 🚀 Practice your knowledge through assignments related to recursive problem-solving.
+
+
+<Tabs defaultValue="learn">
+
+<TabsList>
+  <TabsTrigger value="learn">Learn</TabsTrigger>
+  <TabsTrigger value="assignment">Assignment</TabsTrigger>
+</TabsList>
+
+<TabsContent value="learn">
+
+## 📺 Watch Now
+
+<div className="w-full h-full">
+    <VideoPlayer src="https://youtu.be/5J07qXtAPb4"/>
+
+
+<Callout type="info">
+    We hope that you found the tutorial video helpful in understanding the basic concepts of recursion in javascript, You can refer this notes 📝 for quick revision.
+</Callout>
+
+## 📝 Study Notes
+
+### Factorial of a Number
+
+```javascript
+function factorial(n){
+    if(n === 0)
+        return 1;
+    return n * factorial(n - 1);
+}
+
+console.log(factorial(8));
+```
+
+### Sum of Array
+
+```javascript
+function sumOfArrays(arr, n){
+    if(n === 0){
+        return 0;
+    }
+
+    return arr[n - 1] + sumOfArrays(arr, n - 1);
+}
+
+console.log(sumOfArrays([1, 2, 3, 4, 5], 5));
+```
+
+### Fibonacci Number
+
+```javascript
+function fibo(n){
+    if(n < 2){
+        return n;
+    }
+    return fibo(n - 1) + fibo(n - 2);
+}
+
+console.log(fibo(5));
+```
+
+</div>
+
+</TabsContent>
+
+<TabsContent value="assignment">
+## Practice Questions
+
+- Check whether a string is palindrome or not
+- Create pow(x, n) function which returns x^n
+- Create a function which returns the sum of digits of a number (e.g., sumOfDigits(453) is 12)
+- Create a function which returns the number of digits in a number (e.g., countDigits(453) is 3)
+- Create a function to find the LCM of two numbers
+- Create a function to find the GCD of two numbers
+- Create a function to reverse a string
+</TabsContent>
+
+
+</Tabs>
+
