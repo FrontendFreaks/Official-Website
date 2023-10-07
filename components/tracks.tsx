@@ -13,6 +13,7 @@ export default function Tracks({}: Props) {
       </h4>
       <p>Master the Frontend Development with Frontend Freaks</p>
 
+      {/* Cards Wrapper */}
       <div className="flex gap-6 mt-8 md:flex-row flex-col">
         <div className="flex flex-col gap-3 items-center border p-4 rounded-lg">
           <Image
@@ -22,7 +23,7 @@ export default function Tracks({}: Props) {
             height={250}
             className="rounded bg-white"
           />
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 flex-grow">
             <h3 className="text-xl font-bold ">Build Your Foundation</h3>
             <p className="text-md text-slate-600 max-w-md dark:text-white">
               Make your foundation strong by learning HTML, CSS, JS, Git, and
@@ -45,7 +46,7 @@ export default function Tracks({}: Props) {
             height={250}
             className="rounded bg-white"
           />
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 flex-grow">
             <h3 className="text-xl font-bold ">DSA In Javascript</h3>
             <p className="text-md text-slate-600 max-w-md dark:text-white">
               Enroll for this batch to ace DSA skills with javascript, enhancing
@@ -67,7 +68,7 @@ export default function Tracks({}: Props) {
             height={250}
             className="rounded bg-white"
           />
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 flex-grow">
             <h3 className="text-xl font-bold ">Build Projects</h3>
             <p className="text-md text-slate-600 max-w-md dark:text-white">
               Build the project with the latest technologies like React, Redux,
@@ -89,7 +90,7 @@ export default function Tracks({}: Props) {
             height={250}
             className="rounded bg-white"
           />
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 flex-grow">
             <h3 className="text-xl font-bold ">Get Hired</h3>
             <p className="text-md text-slate-600 max-w-md dark:text-white">
               Enroll for this batch to ace interviews with tips, tricks, and
