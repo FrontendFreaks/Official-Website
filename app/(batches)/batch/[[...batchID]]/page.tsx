@@ -1,13 +1,6 @@
 import { allBatches } from "@/.contentlayer/generated";
 import { DocsHeader } from "@/components/docs-header";
 import { Mdx } from "@/components/markdown/mdx";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionContent,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { cn } from "@/lib/utils";
 import { notFound } from "next/navigation";
 
 type Props = {
