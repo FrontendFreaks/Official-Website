@@ -6,7 +6,7 @@ type Props = {};
 
 export default function SiteFooter({}: Props) {
   return (
-    <footer className="bg-gray-100 dark:bg-black py-10">
+    <footer className="bg-gray-100 dark:bg-[#161D29] py-10">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center dark:text-white text-gray-700">
           <a
