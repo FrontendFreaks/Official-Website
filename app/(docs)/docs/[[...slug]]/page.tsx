@@ -28,7 +28,7 @@ export default async function page({ params }: Props) {
   }
 
   return (
-    <main className="relative py-6 lg:gap-10 lg:py-10 xl:grid xl:grid-cols-[1fr_300px]">
+    <main className="relative py-6 lg:gap-10 lg:py-10 xl:grid xl:grid-cols-[1fr]">
       <div className="mx-auto w-full min-w-0">
         <DocsHeader title={doc.title} text={doc.description} />
         <Mdx code={doc.body.code} />
