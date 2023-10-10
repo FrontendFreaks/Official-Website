@@ -6,7 +6,7 @@ export const navConfig: NavItem[] = [
     href: "/batch/learn/html/basic",
   },
   {
-    title: "DSA IN JS",
+    title: "DSA in JS",
     href: "/batch/dsa/loops",
   },
   {
