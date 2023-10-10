@@ -37,13 +37,13 @@ To get started with the Frontend Freaks website, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/frontend-freaks/frontend-freaks-website.git
+   git clone https://github.com/FrontendFreaks/Official-Website.git
    ```
 
 2. Change into the project directory:
 
    ```bash
-   cd frontend-freaks-website
+   cd Official-Website
    ```
 
 3. Install the project dependencies:
