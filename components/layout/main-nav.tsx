@@ -34,7 +34,7 @@ export default function MainNav({ items, children }: MainNavProps) {
                   href={item.href}
                   key={index}
                   className={cn(
-                    "flex items-center font-medium transition-colors hover:text-foreground/80 sm:text-sm capitalize text-foreground/60"
+                    "flex items-center font-medium transition-colors hover:text-foreground/80 sm:text-sm text-foreground/60"
                   )}
                 >
                   {item.title}
