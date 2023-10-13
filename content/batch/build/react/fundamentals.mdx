@@ -27,6 +27,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 <TabsList>
   <TabsTrigger value="learn">Learn</TabsTrigger>
   <TabsTrigger value="assignment">Assignment</TabsTrigger>
+  <TabsTrigger value="interview">Interview Questions</TabsTrigger>
 </TabsList>
 
 <TabsContent value="learn">
@@ -50,7 +51,73 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
     - At the end of each article, you'll find a few challenges to tackle. These challenges will help solidify your understanding of the concepts and make it easier to remember the code syntax. There are a total of 22 challenges spread across 8 articles (start From Your First Component to Keeping Components Pure ). 🧐💻
     - How do you feel after completing these challenges? Did reading the official ReactJS documentation make it easier to understand the technology? Share your experiences and learning journey on LinkedIn and Twitter using the hashtag #FrontendWithVishal to inspire others to learn from the official documentation too. 🤝🚀
 
+</TabsContent>
 
+<TabsContent value="interview">
+ ### 📌🔨 Frequently Asked Theory Questions
+
+  #### Q1 Why is React Known as React?
+   - Because of it's ability to react to changes in the data. When the data in a React Component changes, React will automatically re-render the component so that it refects the updated data.
+   
+
+  #### Q2 What is JSX?
+   - JSX is HTML like syntax which can be written inside JavaScript file. JSX is not HTML inside JS but HTML like syntax. It is not a part of React but is used to make developer experience easy as we no longer have to write code using React.CreateElement. 
+   - It also helps in preventing cross-site scripting.
+   - Browsers cannot read JSX directly, therefore, it must be transpiled (converted) to JavaScript before sending it to the Browser. Babel is needed here.
+   - JSX is not mandatory to use for using React but is recommended otherwise, code will be hard to read. 🤔📖
+
+
+  #### Q3 Advantages of React
+   - It's ability to handle complex User Interfaces.
+   - Have components which are flexible and reusable.
+   - Uses the concept of Virtual Dom, React Fiber (New Reconciliation algorithm) which enhances 🚀 performance optimization of app. 
+
+
+  #### Q4 Disadvantages of React
+   - Steep learning curve for beginners. 
+   - Need additional libraries and tools to complete a full-featured application. 
+
+
+  #### Q5 What are React Components?
+   - Components let you split the UI into small 🤏, independent, reusable piece of code 🧩. They makes it easy to manage, maintain and test code as well as UI of app.
+   - Types of components in React: Class-based Component and Functional Component.
+
+
+  #### Q6 Difference between Functional Components and Class-based Components?
+   - Functional Components are JavaScript functions and Class-based Components are JavaScript classes in the end.
+   - Functional Components lets you use React Hooks for state management, are simpler and do not have state or lifecycle methods whereas Class-based components have access to state and lifecycle methods.
+
+
+  #### Q7 Why do we use State Variables instead in React instead of Local Variables?
+   - Functional Components are JavaScript functions and Class-based Components are JavaScript classes in the end.
+   - Functional Components lets you use React Hooks for state management, are simpler and do not have state or lifecycle methods whereas Class-based components have access to state and lifecycle methods.
+
+
+  #### Q8 Why do we use State Variables instead in React instead of Local Variables?
+   - When we try to update the UI using Local State Variables, the data layer gets updated but the UI does not re-render. That's why the updated data does not appear on the screen but gets updated in the background. Now, here we need React Hooks.
+   - State Variables works and looks like local variables which cannot be directly updated. So, that's why, we need second parameter (a state function) which we get from useState hook.
+
+   ```react
+   
+   const [stateVariable, setStateVariable] = useState(initalValue);
+               ↓                 ↓
+        (state variable)  (state function)
+   
+   ```
+   - Whenever there is a change in local state variable, the UI renders. As it triggers a Reconciliation cycle which uses React Fiber for efficent Dom Manipulation which updates only the updated part in the DOM.
+
+
+  #### Q8 What is State?
+   - An object which represents the current state of your component and can be updated using state function.
+
+
+  #### Q9 What is props?
+   - It allows you to pass data from parent component to child component. Its a one-way flow of data. 
+
+
+  #### Q10 Difference between State and props?
+   - State is internal data of a component that can change and is managed by the component itself, whereas props are external data passed to a component from its parent component.
+   - State can be updated by the component, whereas props cannot be updated by the component.
 
 
 </TabsContent>
