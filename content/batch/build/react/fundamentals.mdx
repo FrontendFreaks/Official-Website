@@ -28,6 +28,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
   <TabsTrigger value="learn">Learn</TabsTrigger>
   <TabsTrigger value="assignment">Assignment</TabsTrigger>
   <TabsTrigger value="interview">Interview Questions</TabsTrigger>
+  <TabsTrigger value="notes">Notes</TabsTrigger>
 </TabsList>
 
 <TabsContent value="learn">
@@ -118,6 +119,258 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
   #### Q10 Difference between State and props?
    - State is internal data of a component that can change and is managed by the component itself, whereas props are external data passed to a component from its parent component.
    - State can be updated by the component, whereas props cannot be updated by the component.
+
+
+<TabsContent value="notes">
+
+  ## Notes
+
+    In ReactJS, everything is a `component`
+
+    For example, in our Youtube UI, we have multiple components, such as:
+    - Banner
+    - Nav
+    - Images
+    - Title
+    - Review
+
+    A __component__ is a simpler regular JavaScript function that is customizable, and we can reuse it in our code to build UIs.
+
+    ### 2 Types of Components:
+
+    1. __Functional Components__:
+      - Functional components are a more recent addition to React and are essentially JavaScript functions that return JSX. 
+      - They are simpler and more concise.
+      - we start it with a function.
+
+      ```react
+      function Greeting(){
+        return <h1>Hello</h1>
+      }
+      ```
+    2. __Class Components__:
+      - Class components are the older way of defining components in React. 
+      - They are defined as ES6 classes that extend the `React.Component` class.
+      - class components were being used in 2012, now they are history.
+
+      ```react
+        //we also need to import it at top of js file
+        import {Componet} from "react";
+
+        class Forest extends Components{
+          render(){
+            return <h1>Hello</h1>
+          }
+        }
+      ```
+      <br/>
+    ### Name & Default Import and Export:
+
+      `index.js` is the entry point of our app.
+
+      `root` id is provided in our index.html where we want to put that content in.
+
+      - Hence, we are dynamically adding all the content
+
+      in `index.js` we are importing our app or `app.js` using:
+
+      ```react
+      import App from "./App";
+      ```
+
+      but before this, we MUST `export` our App in `app.js` :
+
+      ```react
+      export default App;
+      ```
+
+      Basically, for using the functional component in the index.js we must export it.
+
+      ### Name Export:
+
+      `App.js`
+
+      ```react
+          export function App() {
+          return (
+            <div className="App">
+              <h1>Hello CodeSandbox</h1>
+              <h2>Start editing to see some magic happen!</h2>
+            </div>
+          );
+        }
+      ```
+      - Now we can’t change the name.
+
+      - We will have to write the exact name in { }
+
+      `index.js`
+
+      ```react
+        import {App} from "./App";
+
+        const rootElement = document.getElementById("root");
+        const root = createRoot(rootElement);
+
+        root.render(
+          <StrictMode>
+            <App />
+          </StrictMode>
+        );
+      ```
+
+      ### Default Export:
+
+      `App.js`
+
+      ```react
+        function App() {
+          return (
+            <div className="App">
+              <h1>Hello CodeSandbox</h1>
+              <h2>Start editing to see some magic happen!</h2>
+            </div>
+          );
+        }
+
+        export default App;
+      ```
+
+      `index.js`
+
+      ```react
+        import { StrictMode } from "react";
+        import { createRoot } from "react-dom/client";
+
+        import App from "./App";
+
+        const rootElement = document.getElementById("root");
+        const root = createRoot(rootElement);
+
+        root.render(
+          <StrictMode>
+            <App />
+          </StrictMode>
+        );
+
+        //Now instead of `App` we can use any other variable name too.
+        import { StrictMode } from "react";
+        import { createRoot } from "react-dom/client";
+
+        import Greetings from "./App";
+
+        const rootElement = document.getElementById("root");
+        const root = createRoot(rootElement);
+
+        root.render(
+          <StrictMode>
+            <Greetings />
+          </StrictMode>
+        );
+      ```
+
+      ### Components in React:
+
+      ```react
+      function Greeting(){
+        return <h1>Hello</h1>
+      }
+      ```
+      Components are __regular JavaScript functions__.
+      But there is a difference between regular js functions and components:
+      - In regular JS functions we can start the name of func. with `lowercase` letter, but with components we can not.
+      - The console will not recognize it.
+
+    ### JSX:
+
+    ```react
+      function App() {
+        return (
+          <div className="App">
+            <h1>Hello CodeSandbox</h1>
+            <h2>Start editing to see some magic happen!</h2>
+            <Greeting/>
+          </div>
+        );
+      }
+    ```
+    What is this?
+    - It looks like simple HTML but it is __not__.
+    - `<Greeting/>` tag is not in HTML.
+    - `className` is also not in HTML.
+
+    > **Note**
+    > This is JSX: syntax extension for JavaScript, which helps us to write HTML markup language in the JavaScript itself.
+
+    we use `className` because `class` is a __reserved keyword__.
+
+    > JSX = JS + HTML
+
+    ### Props:
+
+    Props are the __properties__ of the component that are used to pass data from `parent` component to `child` component.
+
+    ```react
+      function Greeting({name}){
+        return <h1>Hello {name}</h1>
+      }
+
+      function App() {
+        return (
+          <div className="App">
+            <Greeting name="Sanskriti"/>
+          </div>
+        );
+      }
+
+      export default App;
+    ```
+
+    #### Using Props:
+
+    ```react
+      function Greeting(props){
+        return <h1>Hello {props.name}, {props.greeting}</h1>
+      }
+
+      function App() {
+        return (
+          <div className="App">
+            <Greeting name="Sanskriti" greeting="morning"/>
+          </div>
+        );
+      }
+    ```
+
+    ### Default props:
+    when we don’t have a value, we can put a default value:
+
+    ```react
+      function Greeting({name,greeting="morning"}){
+        return <h1>Hello {name}, {greeting}</h1>
+      }
+
+      function App() {
+        return (
+          <div className="App">
+            <Greeting name="Sanskriti" greeting="morning"/>
+          </div>
+        );
+      }
+    ```
+
+    > **Note**
+    > Props are Read Only!!!! (V.V.Imp)
+
+   ### State in ReactJS:
+   state is the data or React object which is used to handle the user interactivity!
+
+   - to use it - `import {useState} from "react";`
+
+   ```react
+    //array destructuring
+    const [value, setterfunction] = useState(0);
+  ```
 
 
 </TabsContent>
