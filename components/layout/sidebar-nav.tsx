@@ -107,7 +107,7 @@ export function DocsSidebarNavItem({
         "bg-muted": pathname === item.href,
       })}
     >
-      {item.title}uh
+      {item.title}
     </Link>
   ) : (
     <span className="flex w-full cursor-not-allowed items-center rounded-md p-2 opacity-60">
