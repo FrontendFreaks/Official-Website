@@ -188,7 +188,131 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 </TabsContent>
 
 <TabsContent value="interview">
-    Interview Questions on CSS Grid
+    
+# 📌🎨 CSS Grid Theory Questions
+
+### Q1 What is CSS Grid?
+- CSS Grid is a two-dimensional layout system for the web. It lets you layout items into rows and columns, and it's a great solution for building complex web layouts.
+
+### Q2 How do you enable Grid for a container?
+- To enable Grid for a container, set the container's display property to grid.
+
+```css
+.container {
+  display: grid;
+}
+```
+
+### Q3 What are the main concepts of CSS Grid?
+- The main concepts of CSS Grid are:
+ - Grid container: The element on which you apply display: grid.
+ - Grid item: The children of the grid container.
+ - Grid lines: The dividing lines that make up the rows and columns of the grid.
+ - Grid track: The space between two adjacent grid lines.
+
+### Q4 What is the difference between grid-template-columns and grid-template-rows?
+- grid-template-columns: It defines the number of columns and their sizes.
+- grid-template-rows: It defines the number of rows and their sizes.
+
+### Q5 What is the grid-area property?
+- The grid-area property is a shorthand for grid-row-start, grid-column-start, grid-row-end, and grid-column-end, specifying a grid item’s size and location.
+
+### Q6 What is grid-gap?
+- grid-gap is a shorthand for grid-row-gap and grid-column-gap, which specifies the size of the gap between rows and columns.
+
+### Q7 What is the grid-auto-flow property?
+- The grid-auto-flow property controls how auto-placed items are inserted in the grid.
+
+### Q8 What is the fr unit?
+- The fr unit is a flexible length used to distribute available space in the grid container.
+
+### Q9 What is the repeat() function?
+- The repeat() function repeats a portion of your grid definition, reducing repetition in your code.
+
+### Q10 What are some common use cases for CSS Grid?
+- Creating a layout with rows and columns.
+- Aligning items in two dimensions.
+- Building complex web layouts with ease.
+
+
+
+# 📌💻 CSS Grid Coding Questions
+
+## Q1 Create a simple grid container
+
+### Question
+Create a grid container with three grid items inside it. Set the grid to have two columns and three rows.
+
+### Answer
+```html
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr;">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>
+```
+
+## Q2 Make grid items span multiple tracks
+
+### Question
+Given a grid container with six items, make the first item span two columns and the second item span two rows.
+
+### Answer
+```html
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr;">
+  <div style="grid-column: span 2;">Item 1</div>
+  <div style="grid-row: span 2;">Item 2</div>
+  <div>Item 3</div>
+  <div>Item 4</div>
+  <div>Item 5</div>
+  <div>Item 6</div>
+</div>
+```
+
+## Q3 Align grid items
+
+### Question
+Given a grid container with three items, align the items in the center of the container both horizontally and vertically.
+
+### Answer
+```html
+<div style="display: grid; place-items: center; height: 200px;">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>
+```
+
+## Q4 Create a responsive layout with grid-template-areas
+
+### Question
+Create a responsive layout with a header, a main content area, and a footer using CSS Grid. Use grid-template-areas to define the layout areas.
+
+### Answer
+```html
+<div style="display: grid; grid-template-areas: 'header' 'main' 'footer'; grid-template-rows: auto 1fr auto; height: 100vh;">
+  <header style="grid-area: header;">Header</header>
+  <main style="grid-area: main;">Main Content</main>
+  <footer style="grid-area: footer;">Footer</footer>
+</div>
+```
+
+## Q5 Use grid-auto-flow with dense packing
+
+### Question
+Given a grid container with six items, use grid-auto-flow with dense packing to fill in the empty spaces when items are removed.
+
+### Answer
+```html
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-auto-flow: dense;">
+  <div>Item 1</div>
+  <div>Item 3</div>
+  <div>Item 4</div>
+  <div>Item 6</div>
+</div>
+```
+
+
 </TabsContent>
 
 </Tabs>

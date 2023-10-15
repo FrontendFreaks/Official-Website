@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { Icons } from "../icons";
-import { useSelectedLayoutSegment } from "next/navigation";
+import { usePathname, useSelectedLayoutSegment } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { MobileNav } from "./mobile-nav";
 import { NavItem } from "@/types";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+import { useRouter } from "next/navigation";
 
 interface MainNavProps {
   items?: NavItem[];
@@ -17,11 +19,13 @@ export default function MainNav({ items, children }: MainNavProps) {
   const segment = useSelectedLayoutSegment();
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
 
+  let pathname = usePathname();
+
   return (
     <div className="flex gap-6 md:gap-10 w-full">
       <Link href="/" className="hidden items-center space-x-2 md:flex">
         <span className="hidden text-lg font-bold sm:inline-block">
-          Frontend Freaks 
+          Frontend Freaks
         </span>
       </Link>
 
@@ -29,12 +33,16 @@ export default function MainNav({ items, children }: MainNavProps) {
         <div className="flex gap-6">
           <nav className="hidden md:flex gap-6">
             {items?.map((item, index) => {
+              const isActive = pathname === item.href;
               return (
                 <Link
                   href={item.href}
                   key={index}
                   className={cn(
-                    "flex items-center font-medium transition-colors hover:text-foreground/80 sm:text-sm capitalize text-foreground/60"
+                    "flex items-center font-medium transition-colors hover:text-foreground/80 sm:text-sm capitalize text-foreground/60 rounded-md p-2",
+                    {
+                      "bg-muted": isActive,
+                    }
                   )}
                 >
                   {item.title}

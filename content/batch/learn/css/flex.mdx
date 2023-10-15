@@ -195,7 +195,153 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 </TabsContent>
 
 <TabsContent value="interview">
-    Interview Questions on CSS Flex
+   
+ # 📌🎨 CSS Flex Theory Questions
+
+  ### Q1 What is CSS Flexbox?
+  - CSS Flexbox is a layout model that allows you to design a complex layout structure with a more efficient and predictable way than traditional models, especially when it comes to distributing space and aligning items in complex layouts and when the size of your items is unknown or dynamic.
+
+  ### Q2 How do you enable Flexbox for a container?
+  - To enable Flexbox for a container, you set the container's display property to flex or inline-flex. Flex makes the container a block-level flex container, while inline-flex makes it an inline-level flex container.
+
+  ```css
+.container {
+  display: flex;
+}
+ ```
+
+  ### Q3 What are the main concepts of Flexbox?
+ - The main concepts of Flexbox are:
+ - Flex container: The parent element you apply display: flex to.
+ - Flex item: The child elements of the flex container.
+ - Main axis: The primary axis along which the flex items are laid out. By default, it is horizontal.
+ - Cross axis: The axis perpendicular to the main axis. By default, it is vertical.
+
+ ### Q4 What is the difference between justify-content and align-items?
+- justify-content: It aligns the flex items along the main axis (horizontally by default). It helps in distributing the available space among items.
+align-items: It aligns the flex items along the cross axis (vertically by default). It helps in aligning items perpendicularly to the direction of the main axis.
+
+### Q5 What is the flex property?
+- The flex property is a shorthand for three properties: flex-grow, flex-shrink, and flex-basis. It specifies how a flex item will grow or shrink to fit the space available in its flex container.
+
+```css
+.item {
+  flex: 1;
+}
+ ```
+
+### Q6 How does the flex-wrap property work?
+- The flex-wrap property controls whether the flex items should wrap or not when there's not enough space in the container. By default, flex items will all try to fit onto one line. The possible values are nowrap (default), wrap, and wrap-reverse.
+
+### Q7 What is the align-content property?
+- The align-content property aligns a flex container's lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
+
+### Q8 What is the order property in Flexbox?
+- The order property in Flexbox allows you to change the order of the flex items within the flex container, without changing their order in the source code.
+
+### Q9 What is the difference between flex-direction row and flex-direction column?
+- flex-direction row (default): The main axis is horizontal and the cross axis is vertical.
+flex-direction column: The main axis is vertical and the cross axis is horizontal.
+
+### Q10 What are some common use cases for Flexbox?
+- Centering items in a container.
+- Distributing space between or around items.
+- Aligning items vertically or horizontally.
+- Creating a grid layout.
+- Creating a responsive layout.
+
+
+
+# 📌💻 CSS Flex Coding Questions
+
+## Q1 Create a simple flex container
+
+### Question
+Create a flex container with three flex items inside it. Set the flex direction to row and align the items in the center of the container.
+
+### Answer
+```html
+<div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>
+```
+
+## Q2 Make flex items wrap
+
+### Question
+Given a flex container with five items, make the items wrap onto the next line if there is not enough space in the container.
+
+### Answer
+```html
+<div style="display: flex; flex-wrap: wrap;">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+  <div>Item 4</div>
+  <div>Item 5</div>
+</div>
+```
+
+## Q3 Change the order of flex items
+
+### Question
+Given a flex container with three items, change the order of the items so that the second item comes first, the third item comes second, and the first item comes third.
+
+### Answer
+```html
+<div style="display: flex;">
+  <div style="order: 2;">Item 1</div>
+  <div style="order: 1;">Item 2</div>
+  <div style="order: 3;">Item 3</div>
+</div>
+```
+
+## Q4 Create a responsive layout
+
+### Question
+Create a responsive layout with a header, a main content area, and a footer using CSS Flexbox. Make sure the main content area takes up the remaining space between the header and the footer.
+
+### Answer
+```html
+<div style="display: flex; flex-direction: column; height: 100vh;">
+  <header style="flex-shrink: 0;">Header</header>
+  <main style="flex-grow: 1;">Main Content</main>
+  <footer style="flex-shrink: 0;">Footer</footer>
+</div>
+```
+
+## Q5 Align flex items vertically
+
+### Question
+Given a flex container with three items, set the flex direction to column and align the items in the center of the container both horizontally and vertically.
+
+### Answer
+```html
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>
+```
+
+## Q6 Use align-content property
+
+### Question
+Given a flex container with six items, set the flex-wrap property to wrap and use the align-content property to distribute space between the wrapped lines.
+
+### Answer
+```html
+<div style="display: flex; flex-wrap: wrap; align-content: space-between; height: 200px;">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+  <div>Item 4</div>
+  <div>Item 5</div>
+  <div>Item 6</div>
+</div>
+```
 </TabsContent>
 
 <TabsContent value="playground">

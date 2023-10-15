@@ -27,11 +27,262 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 <TabsList>
   <TabsTrigger value="learn">Learn</TabsTrigger>
   <TabsTrigger value="assignment">Assignment</TabsTrigger>
+  <TabsTrigger value="interview">Interview Questions</TabsTrigger>
 </TabsList>
 
 <TabsContent value="learn">
     ## 📺 Watch Now
     <VideoPlayer src="https://www.youtube.com/watch?v=ddCoFFqLo-g"/>
+
+      ## Notes
+
+    In ReactJS, everything is a `component`
+
+    For example, in our Youtube UI, we have multiple components, such as:
+    - Banner
+    - Nav
+    - Images
+    - Title
+    - Review
+
+    A __component__ is a simpler regular JavaScript function that is customizable, and we can reuse it in our code to build UIs.
+
+    ### 2 Types of Components:
+
+    1. __Functional Components__:
+      - Functional components are a more recent addition to React and are essentially JavaScript functions that return JSX. 
+      - They are simpler and more concise.
+      - we start it with a function.
+
+      ```js
+      function Greeting(){
+        return <h1>Hello</h1>
+      }
+      ```
+    2. __Class Components__:
+      - Class components are the older way of defining components in React. 
+      - They are defined as ES6 classes that extend the `React.Component` class.
+      - class components were being used in 2012, now they are history.
+
+      ```js
+        //we also need to import it at top of js file
+        import {Componet} from "react";
+
+        class Forest extends Components{
+          render(){
+            return <h1>Hello</h1>
+          }
+        }
+      ```
+  
+    ### Name & Default Import and Export:
+
+      `index.js` is the entry point of our app.
+
+      `root` id is provided in our index.html where we want to put that content in.
+
+      - Hence, we are dynamically adding all the content
+
+      in `index.js` we are importing our app or `app.js` using:
+
+      ```js
+      import App from "./App";
+      ```
+
+      but before this, we MUST `export` our App in `app.js` :
+
+      ```js
+      export default App;
+      ```
+
+      Basically, for using the functional component in the index.js we must export it.
+
+      ### Name Export:
+
+      `App.js`
+
+      ```js
+          export function App() {
+          return (
+            <div className="App">
+              <h1>Hello CodeSandbox</h1>
+              <h2>Start editing to see some magic happen!</h2>
+            </div>
+          );
+        }
+      ```
+      - Now we can’t change the name.
+
+      - We will have to write the exact name in { }
+
+      `index.js`
+
+      ```js
+        import {App} from "./App";
+
+        const rootElement = document.getElementById("root");
+        const root = createRoot(rootElement);
+
+        root.render(
+          <StrictMode>
+            <App />
+          </StrictMode>
+        );
+      ```
+
+      ### Default Export:
+
+      `App.js`
+
+      ```js
+        function App() {
+          return (
+            <div className="App">
+              <h1>Hello CodeSandbox</h1>
+              <h2>Start editing to see some magic happen!</h2>
+            </div>
+          );
+        }
+
+        export default App;
+      ```
+
+      `index.js`
+
+      ```js
+        import { StrictMode } from "react";
+        import { createRoot } from "react-dom/client";
+
+        import App from "./App";
+
+        const rootElement = document.getElementById("root");
+        const root = createRoot(rootElement);
+
+        root.render(
+          <StrictMode>
+            <App />
+          </StrictMode>
+        );
+
+        //Now instead of `App` we can use any other variable name too.
+        import { StrictMode } from "react";
+        import { createRoot } from "react-dom/client";
+
+        import Greetings from "./App";
+
+        const rootElement = document.getElementById("root");
+        const root = createRoot(rootElement);
+
+        root.render(
+          <StrictMode>
+            <Greetings />
+          </StrictMode>
+        );
+      ```
+
+      ### Components in React:
+
+      ```js
+      function Greeting(){
+        return <h1>Hello</h1>
+      }
+      ```
+      Components are __regular JavaScript functions__.
+      But there is a difference between regular js functions and components:
+      - In regular JS functions we can start the name of func. with `lowercase` letter, but with components we can not.
+      - The console will not recognize it.
+
+    ### JSX:
+
+    ```js
+      function App() {
+        return (
+          <div className="App">
+            <h1>Hello CodeSandbox</h1>
+            <h2>Start editing to see some magic happen!</h2>
+            <Greeting/>
+          </div>
+        );
+      }
+    ```
+    What is this?
+    - It looks like simple HTML but it is __not__.
+    - `<Greeting/>` tag is not in HTML.
+    - `className` is also not in HTML.
+
+    > **Note**
+    > This is JSX: syntax extension for JavaScript, which helps us to write HTML markup language in the JavaScript itself.
+
+    we use `className` because `class` is a __reserved keyword__.
+
+    > JSX = JS + HTML
+
+    ### Props:
+
+    Props are the __properties__ of the component that are used to pass data from `parent` component to `child` component.
+
+    ```js
+      function Greeting({name}){
+        return <h1>Hello {name}</h1>
+      }
+
+      function App() {
+        return (
+          <div className="App">
+            <Greeting name="Sanskriti"/>
+          </div>
+        );
+      }
+
+      export default App;
+    ```
+
+    #### Using Props:
+
+    ```js
+      function Greeting(props){
+        return <h1>Hello {props.name}, {props.greeting}</h1>
+      }
+
+      function App() {
+        return (
+          <div className="App">
+            <Greeting name="Sanskriti" greeting="morning"/>
+          </div>
+        );
+      }
+    ```
+
+    ### Default props:
+    when we don’t have a value, we can put a default value:
+
+    ```js
+      function Greeting({name,greeting="morning"}){
+        return <h1>Hello {name}, {greeting}</h1>
+      }
+
+      function App() {
+        return (
+          <div className="App">
+            <Greeting name="Sanskriti" greeting="morning"/>
+          </div>
+        );
+      }
+    ```
+
+    > **Note**
+    > Props are Read Only!!!! (V.V.Imp)
+
+   ### State in ReactJS:
+   state is the data or React object which is used to handle the user interactivity!
+
+   - to use it - `import {useState} from "react";`
+
+   ```js
+    //array destructuring
+    const [value, setterfunction] = useState(0);
+  ```
+
 </TabsContent>
 
 <TabsContent value="assignment">
@@ -50,10 +301,76 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
     - At the end of each article, you'll find a few challenges to tackle. These challenges will help solidify your understanding of the concepts and make it easier to remember the code syntax. There are a total of 22 challenges spread across 8 articles (start From Your First Component to Keeping Components Pure ). 🧐💻
     - How do you feel after completing these challenges? Did reading the official ReactJS documentation make it easier to understand the technology? Share your experiences and learning journey on LinkedIn and Twitter using the hashtag #FrontendWithVishal to inspire others to learn from the official documentation too. 🤝🚀
 
+</TabsContent>
+
+<TabsContent value="interview">
+ ### 📌🔨 Frequently Asked Theory Questions
+
+  #### Q1 Why is React Known as React?
+   - Because of it's ability to react to changes in the data. When the data in a React Component changes, React will automatically re-render the component so that it refects the updated data.
+   
+
+  #### Q2 What is JSX?
+   - JSX is HTML like syntax which can be written inside JavaScript file. JSX is not HTML inside JS but HTML like syntax. It is not a part of React but is used to make developer experience easy as we no longer have to write code using React.CreateElement. 
+   - It also helps in preventing cross-site scripting.
+   - Browsers cannot read JSX directly, therefore, it must be transpiled (converted) to JavaScript before sending it to the Browser. Babel is needed here.
+   - JSX is not mandatory to use for using React but is recommended otherwise, code will be hard to read. 🤔📖
 
 
+  #### Q3 Advantages of React
+   - It's ability to handle complex User Interfaces.
+   - Have components which are flexible and reusable.
+   - Uses the concept of Virtual Dom, React Fiber (New Reconciliation algorithm) which enhances 🚀 performance optimization of app. 
+
+
+  #### Q4 Disadvantages of React
+   - Steep learning curve for beginners. 
+   - Need additional libraries and tools to complete a full-featured application. 
+
+
+  #### Q5 What are React Components?
+   - Components let you split the UI into small 🤏, independent, reusable piece of code 🧩. They makes it easy to manage, maintain and test code as well as UI of app.
+   - Types of components in React: Class-based Component and Functional Component.
+
+
+  #### Q6 Difference between Functional Components and Class-based Components?
+   - Functional Components are JavaScript functions and Class-based Components are JavaScript classes in the end.
+   - Functional Components lets you use React Hooks for state management, are simpler and do not have state or lifecycle methods whereas Class-based components have access to state and lifecycle methods.
+
+
+  #### Q7 Why do we use State Variables instead in React instead of Local Variables?
+   - Functional Components are JavaScript functions and Class-based Components are JavaScript classes in the end.
+   - Functional Components lets you use React Hooks for state management, are simpler and do not have state or lifecycle methods whereas Class-based components have access to state and lifecycle methods.
+
+
+  #### Q8 Why do we use State Variables instead in React instead of Local Variables?
+   - When we try to update the UI using Local State Variables, the data layer gets updated but the UI does not re-render. That's why the updated data does not appear on the screen but gets updated in the background. Now, here we need React Hooks.
+   - State Variables works and looks like local variables which cannot be directly updated. So, that's why, we need second parameter (a state function) which we get from useState hook.
+
+   ```react
+   
+   const [stateVariable, setStateVariable] = useState(initalValue);
+               ↓                 ↓
+        (state variable)  (state function)
+   
+   ```
+   - Whenever there is a change in local state variable, the UI renders. As it triggers a Reconciliation cycle which uses React Fiber for efficent Dom Manipulation which updates only the updated part in the DOM.
+
+
+  #### Q8 What is State?
+   - An object which represents the current state of your component and can be updated using state function.
+
+
+  #### Q9 What is props?
+   - It allows you to pass data from parent component to child component. Its a one-way flow of data. 
+
+
+  #### Q10 Difference between State and props?
+   - State is internal data of a component that can change and is managed by the component itself, whereas props are external data passed to a component from its parent component.
+   - State can be updated by the component, whereas props cannot be updated by the component.
 
 </TabsContent>
+
 
 </Tabs>
 

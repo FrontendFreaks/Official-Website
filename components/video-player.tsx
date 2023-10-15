@@ -6,5 +6,9 @@ type Props = {
 };
 
 export default function VideoPlayer({ src }: Props) {
-  return <ReactPlayer controls url={src} />;
+  return (
+    <div className="md:aspect-video">
+      <ReactPlayer controls url={src} width={"100%"} height={"100%"} />
+    </div>
+  );
 }
