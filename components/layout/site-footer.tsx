@@ -26,7 +26,7 @@ export default function SiteFooter({}: Props) {
             Learn
           </a>
           <a href="https://discord.com/invite/vee94km4Wh" target="_blank">
-            <Button className="rounded-full">Mentorship</Button>
+            <Button className="rounded-full">Join Community</Button>
           </a>
           <a
             href="/batch/build/react/fundamentals"
