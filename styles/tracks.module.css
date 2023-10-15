@@ -1,0 +1,10 @@
+/* components/Tracks.module.css */
+
+.image-container {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.image-container:hover {
+    transform: scale(1.15);
+}
