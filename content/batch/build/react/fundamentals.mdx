@@ -54,7 +54,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
       - They are simpler and more concise.
       - we start it with a function.
 
-      ```react
+      ```js
       function Greeting(){
         return <h1>Hello</h1>
       }
@@ -64,7 +64,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
       - They are defined as ES6 classes that extend the `React.Component` class.
       - class components were being used in 2012, now they are history.
 
-      ```react
+      ```js
         //we also need to import it at top of js file
         import {Componet} from "react";
 
@@ -85,13 +85,13 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 
       in `index.js` we are importing our app or `app.js` using:
 
-      ```react
+      ```js
       import App from "./App";
       ```
 
       but before this, we MUST `export` our App in `app.js` :
 
-      ```react
+      ```js
       export default App;
       ```
 
@@ -101,7 +101,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 
       `App.js`
 
-      ```react
+      ```js
           export function App() {
           return (
             <div className="App">
@@ -117,7 +117,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 
       `index.js`
 
-      ```react
+      ```js
         import {App} from "./App";
 
         const rootElement = document.getElementById("root");
@@ -134,7 +134,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 
       `App.js`
 
-      ```react
+      ```js
         function App() {
           return (
             <div className="App">
@@ -149,7 +149,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 
       `index.js`
 
-      ```react
+      ```js
         import { StrictMode } from "react";
         import { createRoot } from "react-dom/client";
 
@@ -182,7 +182,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 
       ### Components in React:
 
-      ```react
+      ```js
       function Greeting(){
         return <h1>Hello</h1>
       }
@@ -194,7 +194,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 
     ### JSX:
 
-    ```react
+    ```js
       function App() {
         return (
           <div className="App">
@@ -221,7 +221,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 
     Props are the __properties__ of the component that are used to pass data from `parent` component to `child` component.
 
-    ```react
+    ```js
       function Greeting({name}){
         return <h1>Hello {name}</h1>
       }
@@ -239,7 +239,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 
     #### Using Props:
 
-    ```react
+    ```js
       function Greeting(props){
         return <h1>Hello {props.name}, {props.greeting}</h1>
       }
@@ -256,7 +256,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
     ### Default props:
     when we don’t have a value, we can put a default value:
 
-    ```react
+    ```js
       function Greeting({name,greeting="morning"}){
         return <h1>Hello {name}, {greeting}</h1>
       }
@@ -278,7 +278,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 
    - to use it - `import {useState} from "react";`
 
-   ```react
+   ```js
     //array destructuring
     const [value, setterfunction] = useState(0);
   ```
