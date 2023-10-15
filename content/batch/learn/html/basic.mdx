@@ -13,6 +13,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 
 - 🎨 Set up HTML boilerplate, add a page title, and use Live Server extension for development.
 - 🔍 Learn heading and paragraph tags, line breaks, horizontal lines, formatting text with bold and italic tags, and creating links, lists, tables, and forms in HTML.
+- 📚 Learn HTML Sematic Elements.
 - 💡 Explore media embedding, semantic tags, and practice HTML through assignments.
 
 <Tabs defaultValue="learn">
@@ -78,7 +79,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 
 ```html
 
-<p>This is the first line.<br>This is the second line.</p>
+<p>This is the first line.<br/>This is the second line.</p>
 
 ```
 
@@ -86,7 +87,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 
 ```html
 
-<hr>
+<hr/>
 
 ```
 
@@ -194,7 +195,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 
 ```html
 
-<img src="image.jpg" alt="Image description">
+<img src="image.jpg" alt="Image description"/>
 
 ```
 
@@ -232,51 +233,21 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 
 ```
 
-## Semantic Tags
+## Semantic Elements
 
-### Header
+A semantic element clearly describes its meaning to both the browser and the developer.
 
-```html
-
-<header>
-  <h1>My Website</h1>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
-
-```
-
-### Main
+### Article
 
 ```html
-
-<main>
-  <section>
-    <h2>Home</h2>
-    <p>Welcome to our website.</p>
-  </section>
-
-  <section>
-    <h2>About</h2>
-    <p>We are a team of passionate developer working on improving the content...</p>
-  </section>
-        
-  <section>
-    <h2>Contact Us</h2>
-    <p>Email Us at sample@mywebsite.com </p>
-  </section>
-
-  <article>
-    <h2>Latest News</h2>
-    <p>Breaking news: Something significant has happened...</p>
-  </article>
-</main>
-
+<article>
+  <h2>Sample Article Heading</h2>
+  <p>An article should make sense on its own,</p>
+  <p>
+    and it should be possible to distribute it independently from the rest of
+    the web site.
+  </p>
+</article>
 ```
 
 ### Aside
@@ -284,26 +255,115 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 ```html
 
 <aside>
-  <h3>Related Links</h3>
-    <ul>
-      <li><a href="/archive">News Archive</a></li>
-      <li><a href="/terms">Terms of Service</a></li>
-    </ul>
+  <h2>Sample Aside Heading</h2>
+  <p>The <aside> element defines some content aside from the content it is placed in (like a sidebar).</p>
+  <p>The <aside> content should be indirectly related to the surrounding content.</p>
 </aside>
 
+```
+
+### Details and Summary
+
+```html
+
+<details>
+  <summary>Epcot Center</summary>
+  <p>The <details> tag specifies additional details that the user can open and close on demand.</p>
+  <p>The <details> tag is often used to create an interactive widget that the user can open and close.</p>
+  <p>By default, the widget is closed. When open, it expands, and displays the content within</p>
+  <p>The <summary> tag is used in conjunction with <details> to specify a visible heading for the details.</p>
+</details>
+
+```
+
+### Figcaption and Figure
+
+```html
+<figure>
+  <img src="sample.jpg" alt="Trulli" style="width:100%" />
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
 ```
 
 ### Footer
 
 ```html
-
 <footer>
-  <p>&copy; 2023 My Website</p>
-    <address>
-      Contact: <a href="mailto:sample@mywebsite.com">sample@mywebsite.com</a>
-    </address>
+  <p>copyrights ©</p>
+  <p><a href=mailto:developer@sample.com>developer@sample.com</a></p>
 </footer>
+```
 
+### Header
+
+```html
+<header>
+  <h1>A Sample Heading</h1>
+  <p>Some additional information here</p>
+</header>
+```
+
+### Main
+
+```html
+
+<main>
+  <article>
+    <h2>Sample Article Header</h2>
+    <p>An article should make sense on its own, and </p>
+    <p>it should be possible to distribute it independently from the rest of the web site.</p>
+  </article>
+</main
+
+```
+
+### Mark
+
+```html
+<p>Do not forget to learn <mark>HTML</mark> today.</p>
+```
+
+### Nav
+
+```html
+<nav>
+  <a href="/html/">HTML</a> | <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/react/">Reactjs</a>
+</nav>
+```
+
+### Section
+
+```html
+<section>
+  <h2>Section One Heading</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>
+    Cras in ante nec turpis tincidunt elementum. Duis sed est sed felis
+    tristique scelerisque nec eget augue.
+  </p>
+  <p>Vestibulum rhoncus rutrum turpis, auctor luctus nunc egestas semper.</p>
+</section>
+
+<section>
+  <h2>Section Two Heading</h2>
+  <p>Aenean varius ac felis non vehicula r rahdirs.</p>
+  <p>
+    r rahdirs lacinia leo vel orci auctor vestibulum. Nunc varius rutrum eros
+    non vestibulum.
+  </p>
+  <p>
+    Duis tincidunt ullamcorper pretium. Suspendisse volutpat imperdiet nibh a
+    sodales.
+  </p>
+</section>
+```
+
+### Time
+
+```html
+<p>Open from <time>10:10</time> to <time>16:10</time> every weekday.</p>
 ```
 
 </TabsContent>
