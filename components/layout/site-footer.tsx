@@ -29,7 +29,7 @@ export default function SiteFooter({}: Props) {
           <Link
               href="https://discord.com/invite/vee94km4Wh"
               target="_blank"
-              className={`${cn(buttonVariants()) } hidden w-0 md:flex md:min-w-fit`}
+              className={`${cn(buttonVariants()) } md:flex md:min-w-fit`}
             >
               Join Discord Community
             </Link>
