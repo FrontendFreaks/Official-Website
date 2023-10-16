@@ -37,10 +37,10 @@ export default function Home() {
               target="_blank"
               className={cn(buttonVariants({ variant: "outline" }))}
             >
-              Join Community
+              Join Discord Community
             </Link>
             <Link href="/batch" className={cn(buttonVariants())}>
-              Join Mentorship
+              Get Started
             </Link>
           </div>
         </div>
