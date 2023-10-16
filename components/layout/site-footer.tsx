@@ -1,6 +1,7 @@
 import React from "react";
 import { cn } from "@/lib/utils";
-import { Button } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
+import Link from "next/link";
 
 type Props = {};
 
@@ -25,9 +26,13 @@ export default function SiteFooter({}: Props) {
           >
             Learn
           </a>
-          <a href="https://discord.com/invite/vee94km4Wh" target="_blank">
-            <Button className="rounded-full">Join Community</Button>
-          </a>
+          <Link
+              href="https://discord.com/invite/vee94km4Wh"
+              target="_blank"
+              className={`${cn(buttonVariants()) } hidden w-0 md:flex md:min-w-fit`}
+            >
+              Join Discord Community
+            </Link>
           <a
             href="/batch/build/react/fundamentals"
             className={cn(
