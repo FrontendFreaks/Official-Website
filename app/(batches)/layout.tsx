@@ -2,6 +2,7 @@ import { CommandMenu } from "@/components/command-menu";
 import { Icons } from "@/components/icons";
 import MainNav from "@/components/layout/main-nav";
 import { DocsSidebarNav } from "@/components/layout/sidebar-nav";
+import SiteFooter from "@/components/layout/site-footer";
 
 import { ModeToggle } from "@/components/mode-toggle";
 import { navConfig } from "@/config/nav";
@@ -37,6 +38,7 @@ const CourseRootLayout = ({ children }: BatchRootLayoutProps) => {
         </div>
       </header>
       <div className="container flex-1">{children}</div>
+      <SiteFooter />
     </div>
   );
 };
