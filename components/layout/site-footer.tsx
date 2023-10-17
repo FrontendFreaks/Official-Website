@@ -43,11 +43,11 @@ export default function SiteFooter({}: Props) {
             </Link>
         </div>
 
-        <div className="flex items-center justify-center dark:text-white text-gray-700">
+        <div className="flex items-center justify-center md:gap-8 gap-4  dark:text-white text-gray-700">
           <a
             href="/"
             className={cn(
-              "mr-4 font-normal transition-colors hover:text-foreground/70 sm:text-md text-foreground/100"
+              "font-normal transition-colors hover:text-foreground/70 sm:text-md text-foreground/100"
             )}
           >
             Home
@@ -55,16 +55,23 @@ export default function SiteFooter({}: Props) {
           <a
             href="/batch/learn/html/basic"
             className={cn(
-              "mr-4 font-normal transition-colors hover:text-foreground/70 sm:text-md text-foreground/100"
+              "font-normal transition-colors hover:text-foreground/70 sm:text-md text-foreground/100"
             )}
           >
             Learn
           </a>
-          
+          <a
+            href="/batch/dsa/loops"
+            className={cn(
+              "font-normal transition-colors hover:text-foreground/70 sm:text-md text-foreground/100"
+            )}
+          >
+            DSA in JS
+          </a>
           <a
             href="/batch/build/react/fundamentals"
             className={cn(
-              "mr-4  font-normal transition-colors hover:text-foreground/70 sm:text-md text-foreground/100"
+              "font-normal transition-colors hover:text-foreground/70 sm:text-md text-foreground/100"
             )}
           >
             Build
@@ -72,10 +79,18 @@ export default function SiteFooter({}: Props) {
           <a
             href="/batch/hire/hire"
             className={cn(
-              "ml-4 font-normal transition-colors hover:text-foreground/70 sm:text-md text-foreground/100"
+              " font-normal transition-colors hover:text-foreground/70 sm:text-md text-foreground/100"
             )}
           >
             Hire
+          </a>
+          <a
+            href="/docs"
+            className={cn(
+              " font-normal transition-colors hover:text-foreground/70 sm:text-md text-foreground/100"
+            )}
+          >
+            Docs
           </a>
         </div>
       </div>
