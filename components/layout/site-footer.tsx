@@ -8,7 +8,7 @@ type Props = {};
 
 export default function SiteFooter({}: Props) {
   return (
-    <footer className="bg-gray-100 dark:bg-[#161D29] py-10">
+    <footer className="bg-gray-100 dark:bg-[#161D29] pt-10">
       <div className="container mx-auto px-4 flex flex-col items-center gap-10">
         <div className="flex md:gap-10 gap-5">
         <Link href="https://github.com/FrontendFreaks" target="_blank" rel="noreferrer">
@@ -93,6 +93,10 @@ export default function SiteFooter({}: Props) {
             Docs
           </a>
         </div>
+      </div>
+
+      <div>
+        <p className="bg-[#161D29] dark:bg-gray-100 py-6 mt-10 text-white dark:text-gray-700 text-center">© FrontendFreaks. All rights reserved</p>
       </div>
     </footer>
   );
