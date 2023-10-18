@@ -8,14 +8,14 @@ type Props = {};
 
 export default function SiteHeader({}: Props) {
   return (
-    <header className="sticky top-0 z-40 w-full bg-background/95 backdrop-blur p-3">
-      <div className="container flex h-14 items-center md:gap-6 gap-9 md:px-8 px-0">
+    <header className="sticky top-0 z-40 w-full p-3 bg-background/95 backdrop-blur">
+      <div className="container flex items-center px-0 h-14 md:gap-6 gap-9 md:px-8">
         <MainNav items={navConfig} />
         <ModeToggle />
         <a href="https://discord.com/invite/vee94km4Wh" target="_blank">
-          <Button className="hidden md:inline-block rounded-full">
+          {/* <Button className="hidden rounded-full md:inline-block">
             Mentorship
-          </Button>
+          </Button> */}
         </a>
       </div>
     </header>
