@@ -29,9 +29,9 @@ export default function SiteFooter({}: Props) {
           <Link
               href="https://discord.com/invite/vee94km4Wh"
               target="_blank"
-              className={`${cn(buttonVariants()) } md:flex md:min-w-fit`}
+              className={`${cn(buttonVariants({ variant: "rounded" })) } md:flex md:min-w-fit`}
             >
-              Join Discord Community
+              Join Community
             </Link>
           <a
             href="/batch/build/react/fundamentals"

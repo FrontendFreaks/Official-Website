@@ -33,7 +33,7 @@ export default function Tracks({}: Props) {
           </div>
           <Link
             href="/batch/learn/html/basic"
-            className={cn(buttonVariants(), "px-8 py-2 mt-4")}
+            className={cn(buttonVariants({ variant: "rounded" }), "px-8 py-2 mt-4")}
           >
             Join
           </Link>
@@ -55,7 +55,7 @@ export default function Tracks({}: Props) {
           </div>
           <Link
             href="/batch/dsa/loops"
-            className={cn(buttonVariants(), "px-8 py-2 mt-4")}
+            className={cn(buttonVariants({ variant: "rounded" }), "px-8 py-2 mt-4")}
           >
             Join
           </Link>
@@ -77,7 +77,7 @@ export default function Tracks({}: Props) {
           </div>
           <Link
             href="/batch/build/react/fundamentals"
-            className={cn(buttonVariants(), "px-8 py-2 mt-4")}
+            className={cn(buttonVariants({ variant: "rounded" }), "px-8 py-2 mt-4")}
           >
             Join
           </Link>
@@ -99,7 +99,7 @@ export default function Tracks({}: Props) {
           </div>
           <Link
             href="/batch/hire/hire"
-            className={cn(buttonVariants(), "px-8 py-2 mt-4")}
+            className={cn(buttonVariants({ variant: "rounded" }), "px-8 py-2 mt-4")}
           >
             Join
           </Link>

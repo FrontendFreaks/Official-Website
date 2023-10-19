@@ -14,18 +14,13 @@ export default function SiteHeader({}: Props) {
       <div className="container flex h-14 items-center md:gap-6 gap-9 md:px-8 px-0">
         <MainNav items={navConfig} />
         <ModeToggle />
-        {/* <a href="https://discord.com/invite/vee94km4Wh" target="_blank">
-          <Button className="hidden md:flex md:min-w-fit rounded-full">
-          Join Discord Community
-          </Button>
-          
-        </a> */}
+        
          <Link
               href="https://discord.com/invite/vee94km4Wh"
               target="_blank"
-              className={`${cn(buttonVariants()) } hidden w-0 md:flex md:min-w-fit`}
+              className={`${cn(buttonVariants({ variant: "rounded" })) } hidden w-0 md:flex md:min-w-fit`}
             >
-              Join Discord Community
+              Join Community
             </Link>
       </div>
     </header>

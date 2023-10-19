@@ -35,11 +35,11 @@ export default function Home() {
             <Link
               href="https://discord.com/invite/vee94km4Wh"
               target="_blank"
-              className={cn(buttonVariants({ variant: "outline" }))}
+              className={cn(buttonVariants({ variant: "outlineRounded" }))}
             >
-              Join Discord Community
+              Join Community
             </Link>
-            <Link href="/batch" className={cn(buttonVariants())}>
+            <Link href="/batch" className={cn(buttonVariants({ variant: "rounded" }))}>
               Get Started
             </Link>
           </div>
