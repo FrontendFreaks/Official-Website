@@ -2,7 +2,7 @@ import Image from "next/image";
 import { buttonVariants } from "./ui/button";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import React from "react"; // Import React
+
 
 type Props = {};
 
@@ -26,7 +26,7 @@ export default function Tracks({}: Props) {
 
 function BatchCard({ imageSrc, title, description, href }) {
     return (
-        <div className="flex flex-col gap-3 items-center border p-4 rounded-lg group hover:scale-107 transition-transform">
+        <div className="flex flex-col gap-3 items-center border p-4 rounded-lg group hover:scale-105 transition-transform">
             <a href={href}>
                 <img
                     src={imageSrc}
