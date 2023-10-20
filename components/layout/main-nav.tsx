@@ -52,6 +52,7 @@ export default function MainNav({ items, children }: MainNavProps) {
           </nav>
         </div>
       ) : null}
+      
       <button
         className="flex items-center space-x-2 md:hidden"
         onClick={() => setShowMobileMenu(!showMobileMenu)}

@@ -41,19 +41,339 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 <TabsList>
   <TabsTrigger value="learn">Learn</TabsTrigger>
   <TabsTrigger value="assignment">Assignment</TabsTrigger>
+  <TabsTrigger value="interview">Interview Questions</TabsTrigger>
 </TabsList>
 
 <TabsContent value="learn">
      ## 📺 Watch Now
 
-<div className="w-full h-full">
-   <VideoPlayer src="https://www.youtube.com/watch?v=9Shi7sbrHqY"/>
-</div>
+    <div className="w-full h-full">
+      <VideoPlayer src="https://www.youtube.com/watch?v=9Shi7sbrHqY"/>
+    </div>
 
 
-<Callout type="info">
-   👨‍💻📝 Now that you have completed the JavaScript tutorial video and reviewed the JavaScript cheat sheet, it's time to put your knowledge into practice by completing the JavaScript assignments. 🚀
-</Callout>
+    <Callout type="info">
+      👨‍💻📝 Now that you have completed the JavaScript tutorial video and reviewed the JavaScript cheat sheet, it's time to put your knowledge into practice by completing the JavaScript assignments. 🚀
+    </Callout>
+
+
+    ## Notes
+
+    # JavaScript CheatSheet
+
+    ### Adding JavaScript to a web page
+
+    JavaScript can be added to an HTML file using the script tag:
+
+    ```jsx
+    <script src="script.js"></script>
+    ```
+
+    ### Comments in JavaScript
+
+    Single-line comments in JavaScript start with **`//`**, while multi-line comments start with **`/*`**and end with **`*/`**.
+
+    ```jsx
+    // This is a single-line comment
+
+    /*
+    This is a multi-line comment
+    */
+    ```
+
+    ### Printing to the console
+
+    You can print to the console in JavaScript using the **`console.log()`** function:
+
+    ```jsx
+    console.log("Hello, world!");
+    ```
+
+    ### ****Variables in JavaScript****
+
+    Variables in JavaScript can be declared using **`let`**, **`const`**, or **`var`**.
+
+    ```jsx
+    let x = 5; // a variable declared with let can be reassigned
+    const y = 10; // a variable declared with const cannot be reassigned
+    var z = 15; // a variable declared with var has function scope
+    ```
+
+    ### Declaring and assigning variables
+
+    Variables in JavaScript can be declared and assigned in the same line:
+
+    ```jsx
+    let x = 5;
+    ```
+
+    ### Arithmetic Operators
+
+    JavaScript supports arithmetic operators such as addition, subtraction, multiplication, division, and modulus:
+
+    ```jsx
+    let x = 5;
+    let y = 10;
+    let z = x + y; // addition
+    let a = x - y; // subtraction
+    let b = x * y; // multiplication
+    let c = y / x; // division
+    let d = y % x; // modulus
+    ```
+
+    ### Unary Operators
+
+    Unary operators are operators that work with only one operand. JavaScript supports several unary operators, such as increment, decrement, and negation:
+
+    ```jsx
+    let x = 5;
+    let y = ++x; // increment
+    let z = --x; // decrement
+    let a = -x; // negation
+    ```
+
+    ### ****Conditional operators****
+
+    JavaScript supports conditional operators such as greater than, less than, equal to, and not equal to:
+
+    ```jsx
+    let x = 5;
+    let y = 10;
+    let z = x > y; // greater than
+    let a = x < y; // less than
+    let b = x == y; // equal to
+    let c = x != y; // not equal to
+    ```
+
+    ### if-else statements
+
+    if-else statements are used in JavaScript to execute code based on a condition:
+
+    ```jsx
+    let x = 5;
+    if (x > 10) {
+      console.log("x is greater than 10");
+    } else if (x < 10) {
+      console.log("x is less than 10");
+    } else {
+      console.log("x is equal to 10");
+    }
+    ```
+
+    ### Switch Statements
+
+    switch statements are used in JavaScript to execute different code blocks based on different conditions:
+
+    ```jsx
+    let day = "Monday";
+    switch (day) {
+      case "Monday":
+        console.log("Today is Monday");
+        break;
+      case "Tuesday":
+        console.log("Today is Tuesday");
+        break;
+      default:
+        console.log("Today is not Monday or Tuesday");
+    }
+    ```
+
+    ### ****Data types in JavaScript****
+
+    JavaScript supports several data types, such as string, number, boolean, null, and undefined:
+
+    ```jsx
+    let x = "Hello, world!"; // string
+    let y = 5; // number
+    let z = true; // boolean
+    let a = null; // null
+    let b = undefined; // undefined
+    ```
+
+    ### Array Methods
+
+    ```jsx
+    // Declaring an array
+    let fruits = ['apple', 'banana', 'orange'];
+
+    // Accessing elements of an array
+    console.log(fruits[0]); // Output: 'apple'
+    console.log(fruits[1]); // Output: 'banana'
+    console.log(fruits[2]); // Output: 'orange'
+
+    // Adding an element to the end of an array
+    fruits.push('grape');
+    console.log(fruits); // Output: ['apple', 'banana', 'orange', 'grape']
+
+    // Removing the last element of an array
+    fruits.pop();
+    console.log(fruits); // Output: ['apple', 'banana', 'orange']
+
+    // Adding an element to the beginning of an array
+    fruits.unshift('grape');
+    console.log(fruits); // Output: ['grape', 'apple', 'banana', 'orange']
+
+    // Removing the first element of an array
+    fruits.shift();
+    console.log(fruits); // Output: ['apple', 'banana', 'orange']
+
+    // Finding the index of an element in an array
+    console.log(fruits.indexOf('banana')); // Output: 1
+    console.log(fruits.indexOf('grape')); // Output: -1 (not found)
+    ```
+
+    ### Objects
+
+    An object is a collection of key-value pairs. The key is a string and the value can be any valid JavaScript data type. You can access the value of an object property using either dot notation or bracket notation.
+
+    ```jsx
+    // Object using object literal notation
+    const person = {
+      name: 'John Doe',
+      age: 30,
+      city: 'New York'
+    };
+
+    // Accessing object properties
+    console.log(person.name); // John Doe
+    console.log(person['age']); // 30
+
+    // Adding or updating object properties
+    person.email = 'johndoe@example.com';
+    person['phone'] = '123-456-7890';
+    console.log(person); // { name: 'John Doe', age: 30, city: 'New York', email: 'johndoe@example.com', phone: '123-456-7890' }
+    ```
+
+    ### For Loops
+
+    For loops are used to iterate over arrays or any iterable object in JavaScript. There are different types of for loops available in JavaScript
+
+    ```jsx
+    // For loop
+    for (let i = 0; i < 5; i++) {
+      console.log(i);
+    }
+
+    // For/in loop for iterating over object properties
+    const person = {
+      name: 'John Doe',
+      age: 30,
+      city: 'New York'
+    };
+
+    for (let prop in person) {
+      console.log(`${prop}: ${person[prop]}`);
+    }
+
+    // For/of loop for iterating over iterable objects
+    const fruits = ['apple', 'banana', 'orange'];
+
+    for (let fruit of fruits) {
+      console.log(fruit);
+    }
+    // There is difference b/w for(let fruit in fruits) vs as shown above
+    // `for...in` is used to iterate over properties of objects whereas `for...of` will iterate over values
+
+    for(let fruit in fruits){
+      console.log(fruit); // O/P: 0 1 2 
+    }
+
+    // forEach method for iterating over arrays
+    fruits.forEach((fruit, index) => {
+      console.log(`${index}: ${fruit}`);
+    });
+    ```
+
+    ### While Loop
+
+    A while loop will execute a block of code repeatedly as long as the specified condition remains true.
+
+    ```jsx
+    let i = 0;
+    while (i < 10) {
+      console.log(i);
+      i++;
+    }
+    ```
+
+    ### Do-while Loop
+
+    A do-while loop is similar to a while loop, but it will always execute the code block at least once, even if the condition is false.
+
+    ```jsx
+    let i = 0;
+    do {
+      console.log(i);
+      i++;
+    } while (i < 10);
+    ```
+
+    ### Functions in JavaScript
+
+    Functions are reusable blocks of code that can be called with different arguments. They can return a value or modify variables outside of their scope.
+
+    ```jsx
+    function add(a, b) {
+      return a + b;
+    }
+
+    const result = add(2, 3);
+    console.log(result); // 5
+    ```
+
+    ### Default parameters
+
+    Default parameters allow you to specify a default value for a function parameter in case no argument is passed in.
+
+    ```jsx
+    function greet(name = "World") {
+      console.log(`Hello, ${name}!`);
+    }
+
+    greet(); // Hello, World!
+    greet("John"); // Hello, John!
+    ```
+
+    ### Arrow Functions
+
+    Arrow functions are a shorthand way of creating functions in JavaScript. They have a more concise syntax and do not bind their own **`this`**value.
+
+    ```jsx
+    const add = (a, b) => a + b;
+
+    const result = add(2, 3);
+    console.log(result); // 5
+    ```
+
+    ### Map method
+
+    **`map()`** creates a new array by applying a function to each element of the original array.
+
+    ```jsx
+    const numbers = [1, 2, 3];
+    const doubled = numbers.map(num => num * 2);
+    console.log(doubled); // [2, 4, 6]
+    ```
+
+    ### Filter method
+
+    **`filter()`** creates a new array containing only the elements that pass a specified test function.
+
+    ```jsx
+    const numbers = [1, 2, 3];
+    const even = numbers.filter(num => num % 2 === 0);
+    console.log(even); // [2]
+    ```
+
+    ### Reduce method
+
+    **`reduce()`** applies a function to each element of an array, resulting in a single output value.
+    ```jsx
+    const numbers = [1, 2, 3];
+    const sum = numbers.reduce((total, num) => total + num, 0);
+    console.log(sum); // 6
+    ```
+
 
 </TabsContent>
 
@@ -65,323 +385,186 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 
 </TabsContent>
 
+<TabsContent value="interview">
+
+### 📌🔨 Frequently Asked Questions on JavaScript
+
+  #### Q1. What is JavaScript?
+  - JavaScript is a high-level, interpreted programming language used for creating interactive web content and applications.
+
+  #### Q2. Explain Hoisting in javascript. (Important)
+  - Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. This means that if you declare a variable or function after it has been used, it will still be recognized.
+  - Example 1:
+  ```jsx
+  x = 5; // Assign 5 to x
+  console.log(x); // 5
+  var x; // Declare x
+  ```
+  - The above code will work because the variable x is hoisted to the top of its scope before code execution.
+
+  - Example 2:
+  ```jsx
+  Greet(); // Hello, world!
+  function Greet() {
+    console.log("Hello, world!");
+  }
+  ```
+  - The above code will work because the function Greet is hoisted to the top of its scope before code execution.
+
+  - Example 3:
+  ```jsx
+  doWork(); 
+  function doWork() {
+    x = 5; // Assign 5 to x
+    console.log(x); // 5
+    var x; // Declare x
+  }
+  ```
+  - In above code, the variable x is hoisted to the top of its scope before code execution, so the code will work.
+  
+  #### Q3. What are the features of JavaScript?
+  - JavaScript is a dynamic programming language with the following features:
+    - It is a client-side scripting language.
+    - It is an interpreted language.
+    - It is an object-oriented language.
+    - It is a lightweight language.
+    - It is a cross-platform language.
+    - It is a loosely typed language.
+
+  #### Q4. What is the difference between == and === in JavaScript?
+  - The == operator compares only the value, while === is a strict equality operator that compares both the value and the type of the variables being compared.
+  ```jsx
+  5 == "5"; // true
+  5 === "5"; // false
+  ```
+  - In the above example, the == operator returns true because it only compares the value, while the === operator returns false because it compares both the value and the type.
+
+  #### Q5. What is the difference between let, const, and var in JavaScript?
+  - Variables declared with let can be reassigned, while variables declared with const cannot be reassigned. Variables declared with var have function scope, while variables declared with let and const have block scope.
+  ```jsx
+  let x = 5;
+  x = 10; // OK
+  const y = 5;
+  y = 10; // Error
+  var z = 5;
+  z = 10; // OK
+  ```
+  - In the above example, the variable x is declared with let, so it can be reassigned. The variable y is declared with const, so it cannot be reassigned. The variable z is declared with var, so it can be reassigned.
+
+  ```jsx
+  if (true) {
+    let x = 5;
+    const y = 10;
+    var z = 15;
+  }
+  console.log(x); // Error
+  console.log(y); // Error
+  console.log(z); // 15
+  ```
+  - In the above example, the variable x is declared with let, so it has block scope and cannot be accessed outside the if block. The variable y is declared with const, so it has block scope and cannot be accessed outside the if block. The variable z is declared with var, so it has function scope and can be accessed outside the if block.
+
+  #### Q6. What is the difference between null and undefined in JavaScript?
+  - null is an assignment value that represents no value, while undefined is a primitive value that represents an uninitialized value.
+  ```jsx
+  let x = null; // x is null
+  let y; // y is undefined
+  ```
+  - In the above example, the variable x is assigned the value null, while the variable y is not assigned any value, so it is undefined.
+
+  #### Q7. Explain Implicit Type Coercion in javascript.
+  - Implicit type coercion is the automatic conversion of values from one data type to another. This can happen when an operator is applied to two values of different types, or when attempting to retrieve the value of a variable that is not defined.
+  ```jsx
+  5 + "5"; // "55"
+  5 - "5"; // 0
+  5 + true; // 6
+  ```
+  - In the above example, the + operator is applied to two values of different types, so the number 5 is converted to a string and concatenated with the string "5". The - operator is applied to two values of different types, so the string "5" is converted to a number and subtracted from the number 5. The + operator is applied to a number and a boolean, so the boolean true is converted to the number 1 and added to the number 5.
+
+  #### Q8. Explain “this” keyword.
+  - The this keyword refers to the object that is currently executing a function. It can be used to access properties and methods of the object.
+  ```jsx
+  const person = {
+    name: "Shankar Doe",
+    age: 30,
+    greet: function () {
+      console.log(`Hello, my name is ${this.name}!`);
+    },
+  };
+  person.greet(); // Hello, my name is Shankar Doe!
+  ```
+
+  ```jsx
+  myFunction() {
+    console.log(this); // Window
+  }
+  ```
+  - In the above example, the this keyword refers to the Window object because the function is not called as a method of an object.
+  - The “this” keyword refers to the object that the function is a property of.
+  - In the above code, the function is a property of which object?
+  - Since the function is invoked in the global context, the function is a property of the global object.
+  - Therefore, the output of the above code will be the global object. Since we ran the above code inside the browser, the global object is the window object.
+
+  #### Q9. What is the difference between function declaration and function expression?
+  - A function declaration is a statement that defines a function, while a function expression is an expression that defines a function.
+  ```jsx
+  // Function declaration
+  function add(a, b) {
+    return a + b;
+  }
+
+  // Function expression
+  const add = function (a, b) {
+    return a + b;
+  };
+  ```
+
+  #### Q10. What is the difference between function declaration and arrow function?
+  - A function declaration is a statement that defines a function, while an arrow function is an expression that defines a function.
+  ```jsx
+  // Function declaration
+  function add(a, b) {
+    return a + b;
+  }
+
+  // Arrow function
+  const add = (a, b) => {
+    return a + b;
+  };
+  ```
+
+  #### Q11. Use Reduce method to find the sum of all the numbers in an array.
+  ```jsx
+  const numbers = [1, 2, 3];
+  const sum = numbers.reduce((total, num) => total + num, 0);
+  console.log(sum); // 6
+  ```
+
+  #### Q12. What is the difference between map and filter?
+  - The map method creates a new array by applying a function to each element of the original array, while the filter method creates a new array containing only the elements that pass a specified test function.
+  ```jsx
+  const numbers = [1, 2, 3];
+  const doubled = numbers.map(num => num * 2);
+  console.log(doubled); // [2, 4, 6]
+
+  const even = numbers.filter(num => num % 2 === 0);
+  console.log(even); // [2]
+  ```
+
+  #### Q13. What are callbacks?
+  - A callback is a function that is passed as an argument to another function and is executed inside that function.
+  ```jsx
+  function greet(name, callback) {
+    console.log(`Hello, ${name}!`);
+    callback();
+  }
+
+  function callMe() {
+    console.log("I am a callback function");
+  }
+
+  greet("Shankar Doe", callMe);
+  ```
+
+</TabsContent>
+
 </Tabs>
-
-
-## Notes
-
-# JavaScript CheatSheet
-
-### Adding JavaScript to a web page
-
-JavaScript can be added to an HTML file using the script tag:
-
-```jsx
-<script src="script.js"></script>
-```
-
-### Comments in JavaScript
-
-Single-line comments in JavaScript start with **`//`**, while multi-line comments start with **`/*`**and end with **`*/`**.
-
-```jsx
-// This is a single-line comment
-
-/*
-This is a multi-line comment
-*/
-```
-
-### Printing to the console
-
-You can print to the console in JavaScript using the **`console.log()`** function:
-
-```jsx
-console.log("Hello, world!");
-```
-
-### ****Variables in JavaScript****
-
-Variables in JavaScript can be declared using **`let`**, **`const`**, or **`var`**.
-
-```jsx
-let x = 5; // a variable declared with let can be reassigned
-const y = 10; // a variable declared with const cannot be reassigned
-var z = 15; // a variable declared with var has function scope
-```
-
-### Declaring and assigning variables
-
-Variables in JavaScript can be declared and assigned in the same line:
-
-```jsx
-let x = 5;
-```
-
-### Arithmetic Operators
-
-JavaScript supports arithmetic operators such as addition, subtraction, multiplication, division, and modulus:
-
-```jsx
-let x = 5;
-let y = 10;
-let z = x + y; // addition
-let a = x - y; // subtraction
-let b = x * y; // multiplication
-let c = y / x; // division
-let d = y % x; // modulus
-```
-
-### Unary Operators
-
-Unary operators are operators that work with only one operand. JavaScript supports several unary operators, such as increment, decrement, and negation:
-
-```jsx
-let x = 5;
-let y = ++x; // increment
-let z = --x; // decrement
-let a = -x; // negation
-```
-
-### ****Conditional operators****
-
-JavaScript supports conditional operators such as greater than, less than, equal to, and not equal to:
-
-```jsx
-let x = 5;
-let y = 10;
-let z = x > y; // greater than
-let a = x < y; // less than
-let b = x == y; // equal to
-let c = x != y; // not equal to
-```
-
-### if-else statements
-
-if-else statements are used in JavaScript to execute code based on a condition:
-
-```jsx
-let x = 5;
-if (x > 10) {
-  console.log("x is greater than 10");
-} else if (x < 10) {
-  console.log("x is less than 10");
-} else {
-  console.log("x is equal to 10");
-}
-```
-
-### Switch Statements
-
-switch statements are used in JavaScript to execute different code blocks based on different conditions:
-
-```jsx
-let day = "Monday";
-switch (day) {
-  case "Monday":
-    console.log("Today is Monday");
-    break;
-  case "Tuesday":
-    console.log("Today is Tuesday");
-    break;
-  default:
-    console.log("Today is not Monday or Tuesday");
-}
-```
-
-### ****Data types in JavaScript****
-
-JavaScript supports several data types, such as string, number, boolean, null, and undefined:
-
-```jsx
-let x = "Hello, world!"; // string
-let y = 5; // number
-let z = true; // boolean
-let a = null; // null
-let b = undefined; // undefined
-```
-
-### Array Methods
-
-```jsx
-// Declaring an array
-let fruits = ['apple', 'banana', 'orange'];
-
-// Accessing elements of an array
-console.log(fruits[0]); // Output: 'apple'
-console.log(fruits[1]); // Output: 'banana'
-console.log(fruits[2]); // Output: 'orange'
-
-// Adding an element to the end of an array
-fruits.push('grape');
-console.log(fruits); // Output: ['apple', 'banana', 'orange', 'grape']
-
-// Removing the last element of an array
-fruits.pop();
-console.log(fruits); // Output: ['apple', 'banana', 'orange']
-
-// Adding an element to the beginning of an array
-fruits.unshift('grape');
-console.log(fruits); // Output: ['grape', 'apple', 'banana', 'orange']
-
-// Removing the first element of an array
-fruits.shift();
-console.log(fruits); // Output: ['apple', 'banana', 'orange']
-
-// Finding the index of an element in an array
-console.log(fruits.indexOf('banana')); // Output: 1
-console.log(fruits.indexOf('grape')); // Output: -1 (not found)
-```
-
-### Objects
-
-An object is a collection of key-value pairs. The key is a string and the value can be any valid JavaScript data type. You can access the value of an object property using either dot notation or bracket notation.
-
-```jsx
-// Object using object literal notation
-const person = {
-  name: 'John Doe',
-  age: 30,
-  city: 'New York'
-};
-
-// Accessing object properties
-console.log(person.name); // John Doe
-console.log(person['age']); // 30
-
-// Adding or updating object properties
-person.email = 'johndoe@example.com';
-person['phone'] = '123-456-7890';
-console.log(person); // { name: 'John Doe', age: 30, city: 'New York', email: 'johndoe@example.com', phone: '123-456-7890' }
-```
-
-### For Loops
-
-For loops are used to iterate over arrays or any iterable object in JavaScript. There are different types of for loops available in JavaScript
-
-```jsx
-// For loop
-for (let i = 0; i < 5; i++) {
-  console.log(i);
-}
-
-// For/in loop for iterating over object properties
-const person = {
-  name: 'John Doe',
-  age: 30,
-  city: 'New York'
-};
-
-for (let prop in person) {
-  console.log(`${prop}: ${person[prop]}`);
-}
-
-// For/of loop for iterating over iterable objects
-const fruits = ['apple', 'banana', 'orange'];
-
-for (let fruit of fruits) {
-  console.log(fruit);
-}
-// There is difference b/w for(let fruit in fruits) vs as shown above
-// `for...in` is used to iterate over properties of objects whereas `for...of` will iterate over values
-
-for(let fruit in fruits){
-  console.log(fruit); // O/P: 0 1 2 
-}
-
-// forEach method for iterating over arrays
-fruits.forEach((fruit, index) => {
-  console.log(`${index}: ${fruit}`);
-});
-```
-
-### While Loop
-
-A while loop will execute a block of code repeatedly as long as the specified condition remains true.
-
-```jsx
-let i = 0;
-while (i < 10) {
-  console.log(i);
-  i++;
-}
-```
-
-### Do-while Loop
-
-A do-while loop is similar to a while loop, but it will always execute the code block at least once, even if the condition is false.
-
-```jsx
-let i = 0;
-do {
-  console.log(i);
-  i++;
-} while (i < 10);
-```
-
-### Functions in JavaScript
-
-Functions are reusable blocks of code that can be called with different arguments. They can return a value or modify variables outside of their scope.
-
-```jsx
-function add(a, b) {
-  return a + b;
-}
-
-const result = add(2, 3);
-console.log(result); // 5
-```
-
-### Default parameters
-
-Default parameters allow you to specify a default value for a function parameter in case no argument is passed in.
-
-```jsx
-function greet(name = "World") {
-  console.log(`Hello, ${name}!`);
-}
-
-greet(); // Hello, World!
-greet("John"); // Hello, John!
-```
-
-### Arrow Functions
-
-Arrow functions are a shorthand way of creating functions in JavaScript. They have a more concise syntax and do not bind their own **`this`**value.
-
-```jsx
-const add = (a, b) => a + b;
-
-const result = add(2, 3);
-console.log(result); // 5
-```
-
-### Map method
-
-**`map()`** creates a new array by applying a function to each element of the original array.
-
-```jsx
-const numbers = [1, 2, 3];
-const doubled = numbers.map(num => num * 2);
-console.log(doubled); // [2, 4, 6]
-```
-
-### Filter method
-
-**`filter()`** creates a new array containing only the elements that pass a specified test function.
-
-```jsx
-const numbers = [1, 2, 3];
-const even = numbers.filter(num => num % 2 === 0);
-console.log(even); // [2]
-```
-
-### Reduce method
-
-**`reduce()`** applies a function to each element of an array, resulting in a single output value.
-```jsx
-const numbers = [1, 2, 3];
-const sum = numbers.reduce((total, num) => total + num, 0);
-console.log(sum); // 6
-```
-

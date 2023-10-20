@@ -5,7 +5,6 @@ import Link from "next/link";
 import { SocialConfig } from "@/types";
 
 
-
 interface FooterProps {
   items?: SocialConfig[];
 }
@@ -28,9 +27,9 @@ export default function SiteFooter({items}: FooterProps) {
         <Link
               href="https://discord.com/invite/vee94km4Wh"
               target="_blank"
-              className={cn(buttonVariants())}
+              className={cn(buttonVariants({variant: "rounded"}))}
             >
-              Join Discord Community
+              Join Community
             </Link>
         </div>
 
@@ -51,6 +50,7 @@ export default function SiteFooter({items}: FooterProps) {
           >
             Learn
           </a>
+
           <a
             href="/batch/dsa/loops"
             className={cn(
@@ -59,6 +59,7 @@ export default function SiteFooter({items}: FooterProps) {
           >
             DSA in JS
           </a>
+
           <a
             href="/batch/build/react/fundamentals"
             className={cn(
