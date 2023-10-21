@@ -36,6 +36,9 @@ import {
   Link,
   X,
   type Icon as LucideIcon,
+  Youtube,
+  Instagram,
+  Linkedin,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -93,4 +96,7 @@ export const Icons = {
   ),
   twitter: Twitter,
   check: Check,
+  youtube: Youtube,
+  instagram: Instagram,
+  linkedin: Linkedin
 };
