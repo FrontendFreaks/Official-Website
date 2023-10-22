@@ -1,0 +1,31 @@
+Essential Selectors Tag 
+
+/* Child Selector (using > ) */
+div>p {
+    background-color: green;
+}
+
+/* Descendant Selector */
+
+.div p {
+    background-color: maroon;
+}
+
+/* Universal Selector (ALL Elements margin and padding are 0; ) */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Pseudo Selector */
+
+/* If you visited the website then you can change the color */
+a:visited {
+    color: red;
+}
+
+/*  If you want to change link color before visit */
+a:link {
+    color: blueviolet;
+}
