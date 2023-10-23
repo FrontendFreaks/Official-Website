@@ -30,6 +30,7 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 <TabsList>
   <TabsTrigger value="learn">Learn</TabsTrigger>
   <TabsTrigger value="assignment">Assignment</TabsTrigger>
+  <TabsTrigger value="interview">Interview Questions</TabsTrigger>
 </TabsList>
 
 <TabsContent value="learn">
@@ -45,20 +46,6 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
    👨‍💻📝 Now that you have completed the JavaScript tutorial video and reviewed the JavaScript cheat sheet, it's time to put your knowledge into practice by completing the JavaScript assignments. 🚀
 </Callout>
 
-</TabsContent>
-
-<TabsContent value="assignment">
-
- ### 📌🔨 Task
-
-- 1. Complete JavaScript DOM challenges from this website: https://www.jschallenger.com/javascript-dom-exercises
-- 2. As your initial mini project, create a simple miniature counter application with buttons for increasing, decreasing, and resetting the count, design it using CSS, and share it on LinkedIn or Twitter with the hashtag **#FrontendWithVishal**, I will provide you with feedback on the post.
-
-
-
-</TabsContent>
-
-</Tabs>
 
 ## Notes
 
@@ -158,3 +145,184 @@ Manipulate HTML Using JS
     //Set the Font of "p1"element
     element.style.fontFamily ='sans-serif';
 ``````
+
+</TabsContent>
+
+<TabsContent value="assignment">
+
+ ### 📌🔨 Task
+
+- 1. Complete JavaScript DOM challenges from this website: https://www.jschallenger.com/javascript-dom-exercises
+- 2. As your initial mini project, create a simple miniature counter application with buttons for increasing, decreasing, and resetting the count, design it using CSS, and share it on LinkedIn or Twitter with the hashtag **#FrontendWithVishal**, I will provide you with feedback on the post.
+
+
+
+</TabsContent>
+
+<TabsContent value="interview">
+
+  ### 📌🔨 Interview Questions
+
+  #### Q1. What is DOM?
+  - DOM stands for Document Object Model. It is a programming interface for HTML documents. 
+  - It represents the structure of a document as a tree of objects, allowing developers to manipulate the content and structure of web pages using languages like JavaScript.
+  - The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
+  - Example: 
+  ```jsx
+  <html>
+  <body>
+    <p id="demo">Hello World!</p>
+    <script>
+      document.getElementById("demo").innerHTML = "Hello Vishal!";
+    </script>
+  </body>
+  </html>
+  ```
+  - In above example, document.getElementById("demo") returns the element with id="demo". Then, innerHTML sets or returns the HTML content (inner HTML) of an element.
+
+  - DOM tree representation of the above example:
+  ```jsx
+  Document
+  |
+  └── html
+      |
+      └── body
+          |
+          └── p (id="demo")
+  ```
+
+  #### Q2. What is the difference between window and document in JavaScript?
+  - The window object is the top level object in the browser. It contains all the global JavaScript objects, functions, and variables. 
+  - The document object represents the DOM and is a part of the window object. It can be used to access and change the content of the document.
+  - The window object is supported by all browsers, while the document object is supported by all HTML pages loaded in the browser window.
+  - Each HTML document that gets loaded into a window becomes a document object. The document contains the contents of the page. Using document object, JavaScript can modify, add and delete the HTML elements, attributes CSS styles in the page
+  
+  #### Q3. What are the different ways to get an element from DOM?
+  - There are multiple ways to get an element from DOM:
+  - document.getElementById() - returns the element that has the ID attribute with the specified value.
+  - document.getElementsByClassName() - returns a collection of all elements in the document with the specified class name.
+  - document.getElementsByTagName() - returns a collection of all elements in the document with the specified tag name.
+  - document.querySelector() - returns the first element that matches a specified CSS selector(s) in the document.
+  - document.querySelectorAll() - returns all elements that matches a specified CSS selector(s) in the document.
+
+
+  #### Q4. What is the difference between document.getElementById() and document.querySelector()?
+  - document.getElementById() returns the element with the specified ID, while document.querySelector() returns the first element that matches a specified CSS selector(s) in the document.
+  - Example:
+  ```jsx
+  <html>
+  <body>
+    <p id="demo">Hello World!</p>
+    <p class="demo">Hello World!</p>
+    <script>
+      document.getElementById("demo").innerHTML = "Hello Vishal!";
+      document.querySelector(".demo").innerHTML = "Hello Vishal!";
+    </script>
+  </body>
+  </html>
+  ```
+  - In above example, document.getElementById("demo") returns the element with id="demo". Then, innerHTML sets or returns the HTML content (inner HTML) of an element.
+  - document.querySelector(".demo") returns the first element that matches the specified CSS selector ".demo". Then, innerHTML sets or returns the HTML content (inner HTML) of an element.
+
+  #### Q5. What is the difference between document.querySelector() and document.querySelectorAll()?
+  - document.querySelector() returns the first element that matches a specified CSS selector(s) in the document, while document.querySelectorAll() returns all elements that matches a specified CSS selector(s) in the document.
+
+  #### Q6. What is the difference between innerHTML and innerText?
+  - innerHTML returns the HTML content (inner HTML) of an element, while innerText returns the text content of an element.
+  - Example:
+  ```jsx
+  <html>
+  <body>
+    <p id="demo">Hello World!</p>
+    <script>
+      document.getElementById("demo").innerHTML = "<b>Hello Vishal!</b>";
+      document.getElementById("demo").innerText = "<b>Hello Vishal!</b>";
+    </script>
+  </body>
+  </html>
+  ```
+  - In above example, document.getElementById("demo").innerHTML = "<b>Hello Vishal!</b>"; sets the HTML content (inner HTML) of an element.
+  - document.getElementById("demo").innerText = "<b>Hello Vishal!</b>"; sets the text content of an element.
+
+  #### Q7. What is the difference between appendChild() and append()?
+  - appendChild() appends a node as the last child of a node, while append() appends a set of Node objects or DOMString objects to the end of the parent element.
+
+  #### Q8. What is the difference between createElement() and createTextNode()?
+  - createElement() creates an Element Node with the specified name, while createTextNode() creates a Text Node with the specified text.
+
+  #### Q9. Does document.onload and window.onload fire at the same time?
+  - No, document.onload and window.onload do not fire at the same time.
+  - window.onload is fired when DOM is ready and all the contents including images, css, scripts, sub-frames, etc. finished loaded. This means that the whole page including all of its dependencies are ready.
+  - document.onload is fired when DOM is ready which can be prior to images and other external content is loaded.
+
+  #### Q10. What is the fastest way to select elements by using css selectors?
+  - It depends on what you are selecting. If you have an ID of an element getElmentById is the fastest way to select an element. However, you should not have so many ID in you document to avoid style repetition. css class getElementsByClassName is the second quickest way to select an element.
+  
+  #### Q11. What is reflow and repaint?
+  - Reflow:
+    - Reflow is the process of the browser laying out the page. It happens when you first display the DOM (generally after the DOM and CSS have been loaded), and happens again every time something could change the layout.
+    - When an elements' dimensions change, such as from adding content like text or an image, the browser recalculates the position and geometry of the elements in the document, which is called reflow.
+    - Reflow is a very expensive operation and should be avoided in critical code paths, such as onscroll and onresize events.
+    - Below are some things that causes reflow:
+      - Adding or removing content, such as paragraphs, images, or any other DOM element.
+      - Animating a DOM element.
+      - Hiding or showing an element by setting the display property to none.
+      - Changing any of the element's dimensions, such as width or height.
+      - Changing the font-size of an element.
+
+  - Repaint:
+    - Repaint occurs after reflow as the browser draws the new layout to the screen.
+    - When an elements' paint-only properties change, such as background-color, border-color, visibility, etc., the browser repaints the element with the new specified values.
+    - Repaint is less expensive than reflow and is not as critical for performance.
+    - Below are some things that causes repaint:
+      - Changing the color of an element's text.
+      - Changing the background color of an element.
+      - Applying a CSS effect such as a shadow or outline.
+      - Showing or hiding an element by changing its visibility property.
+      - Adding or removing a class that applies a different style.
+
+  #### Q12. What is event bubbling? How does event flows in DOM?
+  - Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element.
+  - To understand event bubble, you have to understand what happen when you click on anything on a page.
+  - When you click on anything on a page, the event is triggered on the innermost element and then it bubbles up to the outermost element. This is called event bubbling.
+  - Take example of below HTML code:
+  ```jsx
+  <div class="outer">
+    <div class="inner">
+      <button>Click Me</button>
+    </div>
+  </div>
+  ```
+  - When you click on the button, the click event is triggered on the button first, then on the inner div, then on the outer div, and then on the document object.
+  - This is called event bubbling because the event bubbles up from the innermost element (button) to the outermost element (document).
+  - Event bubbling is the default behavior of the browser. However, you can stop event bubbling by using the stopPropagation() method.
+  - Example:
+  ```jsx
+  <div class="outer">
+    <div class="inner">
+      <button onclick="event.stopPropagation()">Click Me</button>
+    </div>
+  </div>
+  ```
+
+  #### Q13. How could you capture all clicks in a page?
+  - You can capture all clicks in a page by using the addEventListener() method.
+  - Example:
+  ```jsx
+  document.addEventListener("click", function() {
+    console.log("Clicked!");
+  });
+  ```
+  - The above code will capture all clicks in a page and log "Clicked!" to the console.
+
+  #### Q14. How can you get all the texts in a web page?
+  - You can get all the texts in a web page by using the document.body.innerText property.
+  - Example:
+  ```jsx
+  console.log(document.body.innerText);
+  ```
+  - The above code will log all the texts in a web page to the console.
+
+</TabsContent>
+
+</Tabs>
