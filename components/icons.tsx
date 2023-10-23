@@ -24,7 +24,7 @@ import {
   Settings,
   SunMedium,
   Trash,
-  Twitter,
+  // Twitter,
   Film,
   User,
   Star,
@@ -40,7 +40,7 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
-
+import { FaXTwitter } from "react-icons/fa6";
 export type Icon = LucideIcon;
 
 export const Icons = {
@@ -94,9 +94,9 @@ export const Icons = {
       ></path>
     </svg>
   ),
-  twitter: Twitter,
+  twitter: FaXTwitter,
   check: Check,
   youtube: Youtube,
   instagram: Instagram,
-  linkedin: Linkedin
+  linkedin: Linkedin,
 };

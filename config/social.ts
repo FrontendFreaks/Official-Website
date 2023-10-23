@@ -1,6 +1,6 @@
 import { SocialConfig } from "@/types";
-import { Github, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
-
+import { Github, Instagram, Linkedin, Youtube } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 
 export const socialConfig: SocialConfig[] = [
   {
@@ -11,17 +11,19 @@ export const socialConfig: SocialConfig[] = [
   {
     title: "Twitter",
     href: "https://twitter.com/frontendfreaks",
-    iconName: Twitter,
+    iconName: FaXTwitter,
   },
   {
     title: "YouTube",
     href: "https://www.youtube.com/c/VishalRajput_1",
     iconName: Youtube,
-  },{
+  },
+  {
     title: "Instagram",
-    href: "https://www.instagram.com/vishalraj.dev/",    
+    href: "https://www.instagram.com/vishalraj.dev/",
     iconName: Instagram,
-  },{
+  },
+  {
     title: "LinkedIn",
     href: "https://www.linkedin.com/company/frontendfreaks/",
     iconName: Linkedin,
