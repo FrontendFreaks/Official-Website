@@ -7,6 +7,7 @@ import SiteFooter from "@/components/layout/site-footer";
 import { ModeToggle } from "@/components/mode-toggle";
 import { navConfig } from "@/config/nav";
 import { docsConfig } from "@/config/sidebar";
+import { socialConfig } from "@/config/social";
 import Link from "next/link";
 
 
@@ -38,7 +39,7 @@ const CourseRootLayout = ({ children }: BatchRootLayoutProps) => {
         </div>
       </header>
       <div className="container flex-1">{children}</div>
-      <SiteFooter />
+      <SiteFooter items={socialConfig} />
     </div>
   );
 };
