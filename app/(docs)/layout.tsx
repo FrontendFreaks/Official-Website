@@ -8,6 +8,7 @@ import { DocumentationConfig } from "@/config/docs";
 import { docsConfig } from "@/config/sidebar";
 import Link from "next/link";
 import SiteFooter from "@/components/layout/site-footer";
+import { socialConfig } from "@/config/social";
 
 interface BatchRootLayoutProps {
   children: React.ReactNode;
@@ -37,7 +38,7 @@ const CourseRootLayout = ({ children }: BatchRootLayoutProps) => {
         </div>
       </header>
       <div className="container flex-1">{children}</div>
-      <SiteFooter />
+      <SiteFooter items={socialConfig} />
     </div>
   );
 };
