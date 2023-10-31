@@ -47,10 +47,22 @@ Want to improve this page? Raise a issue on [@github](https://github.com/ManishB
 <TabsContent value="learn">
      ## 📺 Watch Now
 
-    <div className="w-full h-full">
-      <VideoPlayer src="https://www.youtube.com/watch?v=9Shi7sbrHqY"/>
-    </div>
+  <Tabs defaultValue="hindi">
+ 
+   <TabsList>
+   <TabsTrigger value="hindi">In Hindi</TabsTrigger>
+   <TabsTrigger value="english">In English</TabsTrigger>
+   </TabsList>
 
+   <TabsContent value="hindi">
+     <VideoPlayer src="https://www.youtube.com/live/NmZYExCd1jw?si=6iJyMTVx7lkQcsg3"/>
+   </TabsContent>
+
+   <TabsContent value="english">
+     <VideoPlayer src="https://www.youtube.com/watch?v=9Shi7sbrHqY"/>
+   </TabsContent>
+    
+  </Tabs>
 
     <Callout type="info">
       👨‍💻📝 Now that you have completed the JavaScript tutorial video and reviewed the JavaScript cheat sheet, it's time to put your knowledge into practice by completing the JavaScript assignments. 🚀
